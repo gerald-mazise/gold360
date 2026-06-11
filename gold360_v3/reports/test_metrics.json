@@ -1,0 +1,67 @@
+{
+  "roc_auc": 0.9817,
+  "avg_precision": 0.993,
+  "brier_score": 0.09,
+  "f1_score": 0.9047,
+  "precision": 0.9916,
+  "recall": 0.8319,
+  "accuracy": 0.8726,
+  "balanced_accuracy": 0.9065,
+  "log_loss": 0.2738,
+  "matthews_corrcoef": 0.7423,
+  "cohen_kappa": 0.7167,
+  "confusion_matrix": {
+    "true_negative": 468,
+    "false_positive": 9,
+    "false_negative": 214,
+    "true_positive": 1059
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.6862170087976539,
+      "recall": 0.9811320754716981,
+      "f1-score": 0.8075927523727351,
+      "support": 477.0
+    },
+    "1": {
+      "precision": 0.9915730337078652,
+      "recall": 0.8318931657501963,
+      "f1-score": 0.9047415634344297,
+      "support": 1273.0
+    },
+    "accuracy": 0.8725714285714286,
+    "macro avg": {
+      "precision": 0.8388950212527595,
+      "recall": 0.9065126206109473,
+      "f1-score": 0.8561671579035823,
+      "support": 1750.0
+    },
+    "weighted avg": {
+      "precision": 0.9083417057751962,
+      "recall": 0.8725714285714286,
+      "f1-score": 0.8782615732193279,
+      "support": 1750.0
+    }
+  },
+  "optimal_threshold_youden": 0.1965,
+  "at_optimal_threshold": {
+    "f1": 0.9459,
+    "precision": 0.9726,
+    "recall": 0.9207,
+    "accuracy": 0.9234
+  },
+  "confidence_distribution": {
+    "mean": 0.844,
+    "median": 0.9677,
+    "std": 0.2426,
+    "pct_above_0.8": 75.26,
+    "pct_above_0.6": 85.03,
+    "pct_below_0.2": 4.17
+  },
+  "risk_distribution": {
+    "low_risk_pct": 33.31,
+    "moderate_risk_pct": 5.66,
+    "elevated_risk_pct": 5.77,
+    "high_risk_pct": 55.26
+  }
+}

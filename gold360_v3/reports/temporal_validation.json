@@ -1,0 +1,57 @@
+[
+  {
+    "split": 1,
+    "train_from": "2020-01",
+    "train_to": "2020-12",
+    "val_from": "2021-01",
+    "val_to": "2021-12",
+    "train_size": 1500,
+    "val_size": 1500,
+    "roc_auc": 0.9709,
+    "brier": 0.0633
+  },
+  {
+    "split": 2,
+    "train_from": "2020-01",
+    "train_to": "2021-12",
+    "val_from": "2022-01",
+    "val_to": "2022-12",
+    "train_size": 3000,
+    "val_size": 1500,
+    "roc_auc": 0.9686,
+    "brier": 0.0768
+  },
+  {
+    "split": 3,
+    "train_from": "2020-01",
+    "train_to": "2022-12",
+    "val_from": "2023-01",
+    "val_to": "2023-12",
+    "train_size": 4500,
+    "val_size": 1500,
+    "roc_auc": 0.963,
+    "brier": 0.092
+  },
+  {
+    "split": 4,
+    "train_from": "2020-01",
+    "train_to": "2023-12",
+    "val_from": "2024-01",
+    "val_to": "2024-12",
+    "train_size": 6000,
+    "val_size": 1500,
+    "roc_auc": 0.9814,
+    "brier": 0.0779
+  },
+  {
+    "split": 5,
+    "train_from": "2020-01",
+    "train_to": "2024-12",
+    "val_from": "2025-01",
+    "val_to": "2025-12",
+    "train_size": 7500,
+    "val_size": 1500,
+    "roc_auc": 0.9922,
+    "brier": 0.0656
+  }
+]

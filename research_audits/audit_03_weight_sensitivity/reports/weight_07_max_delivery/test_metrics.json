@@ -1,0 +1,19 @@
+{
+  "roc_auc": 0.9956,
+  "f1_score": 0.9584,
+  "precision": 0.9983,
+  "recall": 0.9216,
+  "balanced_accuracy": 0.9588,
+  "brier_score": 0.041,
+  "log_loss": 0.1287,
+  "matthews_corrcoef": 0.872,
+  "cohen_kappa": 0.8646,
+  "avg_precision": 0.9983,
+  "optimal_threshold_youden": 0.2891,
+  "confusion_matrix": {
+    "tn": 485,
+    "fp": 2,
+    "fn": 99,
+    "tp": 1164
+  }
+}

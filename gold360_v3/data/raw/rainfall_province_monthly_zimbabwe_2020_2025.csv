@@ -1,0 +1,721 @@
+year_month,province,monthly_rainfall_mm
+2020-01,Bulawayo,108.11111
+2020-02,Bulawayo,116.666664
+2020-03,Bulawayo,30.944445
+2020-04,Bulawayo,27.777777
+2020-05,Bulawayo,3.5555556
+2020-06,Bulawayo,1.5555555
+2020-07,Bulawayo,0.33333334
+2020-08,Bulawayo,0.5
+2020-09,Bulawayo,8.444445
+2020-10,Bulawayo,43.555557
+2020-11,Bulawayo,67.388885
+2020-12,Bulawayo,235.44444
+2021-01,Bulawayo,179.66666
+2021-02,Bulawayo,117
+2021-03,Bulawayo,16.444445
+2021-04,Bulawayo,9.666666
+2021-05,Bulawayo,3
+2021-06,Bulawayo,1.7777778
+2021-07,Bulawayo,0.33333334
+2021-08,Bulawayo,0.5
+2021-09,Bulawayo,3.2777777
+2021-10,Bulawayo,12.722222
+2021-11,Bulawayo,71.55556
+2021-12,Bulawayo,123.27779
+2022-01,Bulawayo,161.16667
+2022-02,Bulawayo,19.277777
+2022-03,Bulawayo,36.166668
+2022-04,Bulawayo,40.277775
+2022-05,Bulawayo,3
+2022-06,Bulawayo,1.6666666
+2022-07,Bulawayo,0.33333334
+2022-08,Bulawayo,0.33333334
+2022-09,Bulawayo,2.8888888
+2022-10,Bulawayo,27.833334
+2022-11,Bulawayo,83.77778
+2022-12,Bulawayo,48.22222
+2023-01,Bulawayo,62.611107
+2023-02,Bulawayo,92.833336
+2023-03,Bulawayo,28.61111
+2023-04,Bulawayo,12.555555
+2023-05,Bulawayo,3
+2023-06,Bulawayo,1.7777778
+2023-07,Bulawayo,0.055555556
+2023-08,Bulawayo,0.5
+2023-09,Bulawayo,4
+2023-10,Bulawayo,34.444443
+2023-11,Bulawayo,26.555557
+2023-12,Bulawayo,123.27778
+2024-01,Bulawayo,97.44444
+2024-02,Bulawayo,6.4444447
+2024-03,Bulawayo,12.388888
+2024-04,Bulawayo,32.333332
+2024-05,Bulawayo,2.9444444
+2024-06,Bulawayo,2.6111112
+2024-07,Bulawayo,0
+2024-08,Bulawayo,0.5
+2024-09,Bulawayo,3.4444444
+2024-10,Bulawayo,20.444445
+2024-11,Bulawayo,110.611115
+2024-12,Bulawayo,140
+2025-01,Bulawayo,213.44444
+2025-02,Bulawayo,144.38889
+2025-03,Bulawayo,9.333333
+2025-04,Bulawayo,65
+2025-05,Bulawayo,2.9444444
+2025-06,Bulawayo,0.9444445
+2025-07,Bulawayo,0.11111111
+2025-08,Bulawayo,0.5
+2025-09,Bulawayo,4.7222223
+2025-10,Bulawayo,16.11111
+2025-11,Bulawayo,149
+2025-12,Bulawayo,151.61111
+2020-01,Harare,233.172378
+2020-02,Harare,153.477142
+2020-03,Harare,43.0171432
+2020-04,Harare,27.0209522
+2020-05,Harare,4.84095234
+2020-06,Harare,2.96761904
+2020-07,Harare,0.4304762
+2020-08,Harare,1.88095238
+2020-09,Harare,5.52666672
+2020-10,Harare,23.058095
+2020-11,Harare,60.8076192
+2020-12,Harare,225.760956
+2021-01,Harare,233.009528
+2021-02,Harare,122.061904
+2021-03,Harare,69.5514284
+2021-04,Harare,13.0600004
+2021-05,Harare,5.85142846
+2021-06,Harare,2.9514286
+2021-07,Harare,0.4304762
+2021-08,Harare,1.74571432
+2021-09,Harare,2.93523808
+2021-10,Harare,33.0704762
+2021-11,Harare,83.644762
+2021-12,Harare,84.655238
+2022-01,Harare,404.532388
+2022-02,Harare,58.4923814
+2022-03,Harare,75.8685688
+2022-04,Harare,70.7771416
+2022-05,Harare,3.42190476
+2022-06,Harare,2.96761904
+2022-07,Harare,0.4304762
+2022-08,Harare,1.74571432
+2022-09,Harare,2.97047614
+2022-10,Harare,23.934286
+2022-11,Harare,120.538092
+2022-12,Harare,129.748574
+2023-01,Harare,240.449522
+2023-02,Harare,147.831434
+2023-03,Harare,87.838098
+2023-04,Harare,23.1161902
+2023-05,Harare,3.91904764
+2023-06,Harare,2.01333338
+2023-07,Harare,0.4304762
+2023-08,Harare,1.88095236
+2023-09,Harare,3.62952388
+2023-10,Harare,91.940001
+2023-11,Harare,33.9885706
+2023-12,Harare,242.44667
+2024-01,Harare,79.821906
+2024-02,Harare,34.4599996
+2024-03,Harare,21.9152386
+2024-04,Harare,39.7476198
+2024-05,Harare,3.91904764
+2024-06,Harare,3.14571428
+2024-07,Harare,0.4304762
+2024-08,Harare,2.2447619
+2024-09,Harare,3.1114286
+2024-10,Harare,27.6342856
+2024-11,Harare,130.831428
+2024-12,Harare,118.180952
+2025-01,Harare,206.849524
+2025-02,Harare,204.039046
+2025-03,Harare,79.7676188
+2025-04,Harare,69.498095
+2025-05,Harare,4.58000004
+2025-06,Harare,1.3752381
+2025-07,Harare,0.4304762
+2025-08,Harare,1.69428576
+2025-09,Harare,3.16761898
+2025-10,Harare,10.310476
+2025-11,Harare,120.417144
+2025-12,Harare,200.42762
+2020-01,Manicaland,216.4158982
+2020-02,Manicaland,200.4922409
+2020-03,Manicaland,24.69986709
+2020-04,Manicaland,39.975541
+2020-05,Manicaland,4.667165145
+2020-06,Manicaland,13.85399409
+2020-07,Manicaland,6.665194389
+2020-08,Manicaland,4.733034733
+2020-09,Manicaland,19.15172715
+2020-10,Manicaland,44.97240927
+2020-11,Manicaland,107.8481373
+2020-12,Manicaland,327.6959209
+2021-01,Manicaland,356.0853973
+2021-02,Manicaland,185.3708282
+2021-03,Manicaland,46.10793673
+2021-04,Manicaland,11.69887076
+2021-05,Manicaland,13.83128518
+2021-06,Manicaland,18.30251586
+2021-07,Manicaland,8.553480491
+2021-08,Manicaland,8.199286778
+2021-09,Manicaland,8.718795145
+2021-10,Manicaland,41.89856364
+2021-11,Manicaland,56.70652645
+2021-12,Manicaland,87.04562282
+2022-01,Manicaland,265.7019
+2022-02,Manicaland,37.54876182
+2022-03,Manicaland,66.83009409
+2022-04,Manicaland,100.3327782
+2022-05,Manicaland,9.199969282
+2022-06,Manicaland,21.06541404
+2022-07,Manicaland,9.291989755
+2022-08,Manicaland,6.25660826
+2022-09,Manicaland,8.603698409
+2022-10,Manicaland,34.30039191
+2022-11,Manicaland,212.4838241
+2022-12,Manicaland,148.5192045
+2023-01,Manicaland,114.2584758
+2023-02,Manicaland,254.1583227
+2023-03,Manicaland,78.09386309
+2023-04,Manicaland,24.05276509
+2023-05,Manicaland,6.640462427
+2023-06,Manicaland,6.352710164
+2023-07,Manicaland,8.444237482
+2023-08,Manicaland,7.957296473
+2023-09,Manicaland,10.4887908
+2023-10,Manicaland,53.56487936
+2023-11,Manicaland,58.24701382
+2023-12,Manicaland,229.9442782
+2024-01,Manicaland,106.4371878
+2024-02,Manicaland,60.14388509
+2024-03,Manicaland,34.36746055
+2024-04,Manicaland,25.31746927
+2024-05,Manicaland,8.137502927
+2024-06,Manicaland,20.37150191
+2024-07,Manicaland,5.6897749
+2024-08,Manicaland,14.96974715
+2024-09,Manicaland,7.586488064
+2024-10,Manicaland,31.34970727
+2024-11,Manicaland,138.7215291
+2024-12,Manicaland,126.5023167
+2025-01,Manicaland,285.3271573
+2025-02,Manicaland,229.9115764
+2025-03,Manicaland,86.96214955
+2025-04,Manicaland,71.12663009
+2025-05,Manicaland,10.69417711
+2025-06,Manicaland,6.500031882
+2025-07,Manicaland,7.590079527
+2025-08,Manicaland,4.235033936
+2025-09,Manicaland,9.811091436
+2025-10,Manicaland,14.03394441
+2025-11,Manicaland,166.8011059
+2025-12,Manicaland,260.4579355
+2020-01,Mashonaland Central,230.584055
+2020-02,Mashonaland Central,186.416571
+2020-03,Mashonaland Central,26.8143054
+2020-04,Mashonaland Central,13.09141975
+2020-05,Mashonaland Central,2.92291868
+2020-06,Mashonaland Central,2.113212716
+2020-07,Mashonaland Central,0.67610773
+2020-08,Mashonaland Central,0.840628708
+2020-09,Mashonaland Central,2.141891087
+2020-10,Mashonaland Central,6.68633725
+2020-11,Mashonaland Central,58.9282841
+2020-12,Mashonaland Central,215.477176
+2021-01,Mashonaland Central,237.374328
+2021-02,Mashonaland Central,154.921611
+2021-03,Mashonaland Central,66.8791556
+2021-04,Mashonaland Central,6.64256617
+2021-05,Mashonaland Central,6.04021655
+2021-06,Mashonaland Central,1.615690285
+2021-07,Mashonaland Central,0.579853425
+2021-08,Mashonaland Central,0.84439127
+2021-09,Mashonaland Central,1.76268289
+2021-10,Mashonaland Central,10.81616033
+2021-11,Mashonaland Central,88.9283144
+2021-12,Mashonaland Central,69.0328316
+2022-01,Mashonaland Central,433.572121
+2022-02,Mashonaland Central,70.9966469
+2022-03,Mashonaland Central,62.633864
+2022-04,Mashonaland Central,65.3762915
+2022-05,Mashonaland Central,2.75092477
+2022-06,Mashonaland Central,2.160427386
+2022-07,Mashonaland Central,0.571564926
+2022-08,Mashonaland Central,0.84167261
+2022-09,Mashonaland Central,1.76722243
+2022-10,Mashonaland Central,9.65528761
+2022-11,Mashonaland Central,120.0174404
+2022-12,Mashonaland Central,124.7899125
+2023-01,Mashonaland Central,226.602843
+2023-02,Mashonaland Central,172.405941
+2023-03,Mashonaland Central,124.804032
+2023-04,Mashonaland Central,13.0818586
+2023-05,Mashonaland Central,2.62898831
+2023-06,Mashonaland Central,1.392283852
+2023-07,Mashonaland Central,0.529334336
+2023-08,Mashonaland Central,0.998148278
+2023-09,Mashonaland Central,1.725038106
+2023-10,Mashonaland Central,58.0880016
+2023-11,Mashonaland Central,16.35480675
+2023-12,Mashonaland Central,176.248515
+2024-01,Mashonaland Central,162.753372
+2024-02,Mashonaland Central,33.8584457
+2024-03,Mashonaland Central,25.7984229
+2024-04,Mashonaland Central,27.4762483
+2024-05,Mashonaland Central,2.97906932
+2024-06,Mashonaland Central,2.565734903
+2024-07,Mashonaland Central,0.534958581
+2024-08,Mashonaland Central,1.139222844
+2024-09,Mashonaland Central,1.75466666
+2024-10,Mashonaland Central,14.6451145
+2024-11,Mashonaland Central,79.2581029
+2024-12,Mashonaland Central,90.656785
+2025-01,Mashonaland Central,248.897928
+2025-02,Mashonaland Central,187.565349
+2025-03,Mashonaland Central,46.4244128
+2025-04,Mashonaland Central,85.1730807
+2025-05,Mashonaland Central,5.21305978
+2025-06,Mashonaland Central,1.546869395
+2025-07,Mashonaland Central,0.508712756
+2025-08,Mashonaland Central,0.945597075
+2025-09,Mashonaland Central,1.77347567
+2025-10,Mashonaland Central,4.45929478
+2025-11,Mashonaland Central,102.1508565
+2025-12,Mashonaland Central,222.561767
+2020-01,Mashonaland East,231.9079233
+2020-02,Mashonaland East,157.6831775
+2020-03,Mashonaland East,29.29154925
+2020-04,Mashonaland East,30.64104242
+2020-05,Mashonaland East,4.396411925
+2020-06,Mashonaland East,3.8261965
+2020-07,Mashonaland East,1.40031899
+2020-08,Mashonaland East,1.906882709
+2020-09,Mashonaland East,7.849168825
+2020-10,Mashonaland East,30.20322555
+2020-11,Mashonaland East,74.12333933
+2020-12,Mashonaland East,256.3794217
+2021-01,Mashonaland East,285.0521825
+2021-02,Mashonaland East,157.2945925
+2021-03,Mashonaland East,61.44775867
+2021-04,Mashonaland East,10.53544059
+2021-05,Mashonaland East,7.488428467
+2021-06,Mashonaland East,3.631383133
+2021-07,Mashonaland East,1.349624787
+2021-08,Mashonaland East,2.053901688
+2021-09,Mashonaland East,3.226759083
+2021-10,Mashonaland East,30.10332258
+2021-11,Mashonaland East,88.25143417
+2021-12,Mashonaland East,74.63213033
+2022-01,Mashonaland East,404.4275883
+2022-02,Mashonaland East,49.96497833
+2022-03,Mashonaland East,58.00550708
+2022-04,Mashonaland East,84.80735017
+2022-05,Mashonaland East,3.690453808
+2022-06,Mashonaland East,4.082768
+2022-07,Mashonaland East,1.346410435
+2022-08,Mashonaland East,2.203688915
+2022-09,Mashonaland East,3.492182142
+2022-10,Mashonaland East,22.77900508
+2022-11,Mashonaland East,126.5712497
+2022-12,Mashonaland East,145.3578304
+2023-01,Mashonaland East,191.8316483
+2023-02,Mashonaland East,192.9626408
+2023-03,Mashonaland East,87.30215217
+2023-04,Mashonaland East,22.30791325
+2023-05,Mashonaland East,4.2220344
+2023-06,Mashonaland East,2.343246117
+2023-07,Mashonaland East,1.287074906
+2023-08,Mashonaland East,2.423461625
+2023-09,Mashonaland East,4.3578136
+2023-10,Mashonaland East,72.0534845
+2023-11,Mashonaland East,31.21031208
+2023-12,Mashonaland East,219.9049242
+2024-01,Mashonaland East,104.6145754
+2024-02,Mashonaland East,38.0177325
+2024-03,Mashonaland East,22.27033383
+2024-04,Mashonaland East,27.35137675
+2024-05,Mashonaland East,4.65367395
+2024-06,Mashonaland East,4.979224183
+2024-07,Mashonaland East,1.241383905
+2024-08,Mashonaland East,4.057539245
+2024-09,Mashonaland East,3.243848967
+2024-10,Mashonaland East,27.063495
+2024-11,Mashonaland East,122.8544631
+2024-12,Mashonaland East,119.1353217
+2025-01,Mashonaland East,231.1033467
+2025-02,Mashonaland East,227.5300825
+2025-03,Mashonaland East,66.52674
+2025-04,Mashonaland East,85.68742908
+2025-05,Mashonaland East,6.7744946
+2025-06,Mashonaland East,2.46420535
+2025-07,Mashonaland East,1.42209918
+2025-08,Mashonaland East,2.017604948
+2025-09,Mashonaland East,3.516155958
+2025-10,Mashonaland East,8.654884425
+2025-11,Mashonaland East,123.1070117
+2025-12,Mashonaland East,247.2022375
+2020-01,Mashonaland West,216.6570143
+2020-02,Mashonaland West,180.3783921
+2020-03,Mashonaland West,31.75660321
+2020-04,Mashonaland West,16.39745729
+2020-05,Mashonaland West,3.489848114
+2020-06,Mashonaland West,1.266135666
+2020-07,Mashonaland West,0.011489593
+2020-08,Mashonaland West,0.611882773
+2020-09,Mashonaland West,3.058339386
+2020-10,Mashonaland West,17.37204524
+2020-11,Mashonaland West,65.87041743
+2020-12,Mashonaland West,234.3413193
+2021-01,Mashonaland West,209.3557929
+2021-02,Mashonaland West,137.7626714
+2021-03,Mashonaland West,61.924006
+2021-04,Mashonaland West,6.714541321
+2021-05,Mashonaland West,5.871830586
+2021-06,Mashonaland West,1.052560229
+2021-07,Mashonaland West,0.011489593
+2021-08,Mashonaland West,0.590126201
+2021-09,Mashonaland West,1.481181579
+2021-10,Mashonaland West,22.32222386
+2021-11,Mashonaland West,70.779746
+2021-12,Mashonaland West,106.6110229
+2022-01,Mashonaland West,349.5880143
+2022-02,Mashonaland West,58.13465664
+2022-03,Mashonaland West,65.15389557
+2022-04,Mashonaland West,52.47859571
+2022-05,Mashonaland West,3.025657986
+2022-06,Mashonaland West,1.124022349
+2022-07,Mashonaland West,0.011489593
+2022-08,Mashonaland West,0.564011161
+2022-09,Mashonaland West,1.475030411
+2022-10,Mashonaland West,16.75760171
+2022-11,Mashonaland West,124.5110043
+2022-12,Mashonaland West,112.7784151
+2023-01,Mashonaland West,241.9184557
+2023-02,Mashonaland West,129.0405197
+2023-03,Mashonaland West,66.39983943
+2023-04,Mashonaland West,9.410573743
+2023-05,Mashonaland West,3.009415793
+2023-06,Mashonaland West,1.076498764
+2023-07,Mashonaland West,0.01110166
+2023-08,Mashonaland West,0.59400567
+2023-09,Mashonaland West,1.614640293
+2023-10,Mashonaland West,71.84575893
+2023-11,Mashonaland West,30.21831757
+2023-12,Mashonaland West,216.6224157
+2024-01,Mashonaland West,123.6982739
+2024-02,Mashonaland West,28.581156
+2024-03,Mashonaland West,32.21493143
+2024-04,Mashonaland West,26.58008
+2024-05,Mashonaland West,3.071239171
+2024-06,Mashonaland West,1.344078686
+2024-07,Mashonaland West,0.011489593
+2024-08,Mashonaland West,0.567423226
+2024-09,Mashonaland West,1.555677993
+2024-10,Mashonaland West,20.472616
+2024-11,Mashonaland West,90.59373879
+2024-12,Mashonaland West,103.2071056
+2025-01,Mashonaland West,195.5652793
+2025-02,Mashonaland West,184.6265043
+2025-03,Mashonaland West,37.71277879
+2025-04,Mashonaland West,47.46071543
+2025-05,Mashonaland West,5.075126007
+2025-06,Mashonaland West,0.595114245
+2025-07,Mashonaland West,0.010183323
+2025-08,Mashonaland West,0.562938524
+2025-09,Mashonaland West,2.090782164
+2025-10,Mashonaland West,10.60099226
+2025-11,Mashonaland West,131.4628864
+2025-12,Mashonaland West,213.5306736
+2020-01,Masvingo,139.006697
+2020-02,Masvingo,150.896738
+2020-03,Masvingo,11.1486583
+2020-04,Masvingo,24.5085512
+2020-05,Masvingo,5.81620025
+2020-06,Masvingo,5.35043333
+2020-07,Masvingo,2.7468819
+2020-08,Masvingo,4.62348334
+2020-09,Masvingo,10.26205082
+2020-10,Masvingo,38.0950301
+2020-11,Masvingo,75.7845426
+2020-12,Masvingo,278.213257
+2021-01,Masvingo,226.354768
+2021-02,Masvingo,138.4760514
+2021-03,Masvingo,19.9581063
+2021-04,Masvingo,7.32928351
+2021-05,Masvingo,9.62758887
+2021-06,Masvingo,6.62340488
+2021-07,Masvingo,2.96141358
+2021-08,Masvingo,3.99403209
+2021-09,Masvingo,5.14994322
+2021-10,Masvingo,19.7526544
+2021-11,Masvingo,49.8055536
+2021-12,Masvingo,108.4582331
+2022-01,Masvingo,167.2332351
+2022-02,Masvingo,11.84018095
+2022-03,Masvingo,31.7553478
+2022-04,Masvingo,61.9456069
+2022-05,Masvingo,10.4009153
+2022-06,Masvingo,8.34195935
+2022-07,Masvingo,3.4209138
+2022-08,Masvingo,3.65741384
+2022-09,Masvingo,4.85767592
+2022-10,Masvingo,24.8953863
+2022-11,Masvingo,111.4695976
+2022-12,Masvingo,42.6378366
+2023-01,Masvingo,69.3225272
+2023-02,Masvingo,129.0681065
+2023-03,Masvingo,17.253547
+2023-04,Masvingo,9.07521345
+2023-05,Masvingo,6.69686671
+2023-06,Masvingo,4.44025635
+2023-07,Masvingo,3.4325901
+2023-08,Masvingo,3.93481352
+2023-09,Masvingo,9.4119758
+2023-10,Masvingo,41.6636645
+2023-11,Masvingo,39.2118783
+2023-12,Masvingo,214.671225
+2024-01,Masvingo,63.4322689
+2024-02,Masvingo,17.6945195
+2024-03,Masvingo,24.8914248
+2024-04,Masvingo,15.3804547
+2024-05,Masvingo,6.01808942
+2024-06,Masvingo,10.7958219
+2024-07,Masvingo,2.29343335
+2024-08,Masvingo,4.54836327
+2024-09,Masvingo,6.1884712
+2024-10,Masvingo,17.0298393
+2024-11,Masvingo,94.3336525
+2024-12,Masvingo,128.0652994
+2025-01,Masvingo,252.997258
+2025-02,Masvingo,186.149775
+2025-03,Masvingo,33.0893796
+2025-04,Masvingo,32.920303
+2025-05,Masvingo,5.00242908
+2025-06,Masvingo,3.6107188
+2025-07,Masvingo,3.17693513
+2025-08,Masvingo,4.37653581
+2025-09,Masvingo,4.52349712
+2025-10,Masvingo,16.60186835
+2025-11,Masvingo,152.823909
+2025-12,Masvingo,191.748221
+2020-01,Matabeleland North,181.033357
+2020-02,Matabeleland North,163.845114
+2020-03,Matabeleland North,59.434639
+2020-04,Matabeleland North,16.62187313
+2020-05,Matabeleland North,2.71952701
+2020-06,Matabeleland North,0.851013295
+2020-07,Matabeleland North,0.001539218
+2020-08,Matabeleland North,0.141910558
+2020-09,Matabeleland North,3.43614655
+2020-10,Matabeleland North,16.5078016
+2020-11,Matabeleland North,63.0801914
+2020-12,Matabeleland North,249.321198
+2021-01,Matabeleland North,191.262686
+2021-02,Matabeleland North,90.8176884
+2021-03,Matabeleland North,24.5299529
+2021-04,Matabeleland North,7.93965478
+2021-05,Matabeleland North,2.78938061
+2021-06,Matabeleland North,0.896106154
+2021-07,Matabeleland North,0.00205229
+2021-08,Matabeleland North,0.139851437
+2021-09,Matabeleland North,1.76893778
+2021-10,Matabeleland North,9.85999237
+2021-11,Matabeleland North,34.4520975
+2021-12,Matabeleland North,130.16563
+2022-01,Matabeleland North,226.866463
+2022-02,Matabeleland North,40.9036415
+2022-03,Matabeleland North,69.7723267
+2022-04,Matabeleland North,28.4640494
+2022-05,Matabeleland North,2.7664108
+2022-06,Matabeleland North,0.851246787
+2022-07,Matabeleland North,0.00205229
+2022-08,Matabeleland North,0.109598067
+2022-09,Matabeleland North,1.538034324
+2022-10,Matabeleland North,19.6257157
+2022-11,Matabeleland North,106.7446051
+2022-12,Matabeleland North,82.6224548
+2023-01,Matabeleland North,99.325162
+2023-02,Matabeleland North,103.3024296
+2023-03,Matabeleland North,31.1486268
+2023-04,Matabeleland North,8.03098385
+2023-05,Matabeleland North,2.592637944
+2023-06,Matabeleland North,0.887680957
+2023-07,Matabeleland North,0.001539218
+2023-08,Matabeleland North,0.135033167
+2023-09,Matabeleland North,1.789456275
+2023-10,Matabeleland North,20.070862
+2023-11,Matabeleland North,12.2487529
+2023-12,Matabeleland North,135.1140629
+2024-01,Matabeleland North,134.814681
+2024-02,Matabeleland North,11.8670533
+2024-03,Matabeleland North,17.347183
+2024-04,Matabeleland North,23.8337526
+2024-05,Matabeleland North,2.61986695
+2024-06,Matabeleland North,1.372761479
+2024-07,Matabeleland North,0.001539218
+2024-08,Matabeleland North,0.11277546
+2024-09,Matabeleland North,1.61362336
+2024-10,Matabeleland North,12.94560937
+2024-11,Matabeleland North,55.8746915
+2024-12,Matabeleland North,129.616274
+2025-01,Matabeleland North,193.969501
+2025-02,Matabeleland North,177.531996
+2025-03,Matabeleland North,24.2632394
+2025-04,Matabeleland North,45.3558982
+2025-05,Matabeleland North,3.3160742
+2025-06,Matabeleland North,0.442909647
+2025-07,Matabeleland North,0.001539218
+2025-08,Matabeleland North,0.128055585
+2025-09,Matabeleland North,2.29056679
+2025-10,Matabeleland North,14.4135325
+2025-11,Matabeleland North,108.9591991
+2025-12,Matabeleland North,207.41239
+2020-01,Matabeleland South,108.3467082
+2020-02,Matabeleland South,118.9078945
+2020-03,Matabeleland South,27.99652864
+2020-04,Matabeleland South,20.911938
+2020-05,Matabeleland South,3.076967227
+2020-06,Matabeleland South,2.8930386
+2020-07,Matabeleland South,0.290509388
+2020-08,Matabeleland South,0.873308133
+2020-09,Matabeleland South,8.154025973
+2020-10,Matabeleland South,39.35653973
+2020-11,Matabeleland South,65.74312336
+2020-12,Matabeleland South,203.2067509
+2021-01,Matabeleland South,174.9241927
+2021-02,Matabeleland South,153.1591169
+2021-03,Matabeleland South,15.17909109
+2021-04,Matabeleland South,7.300082827
+2021-05,Matabeleland South,2.822127518
+2021-06,Matabeleland South,2.907871764
+2021-07,Matabeleland South,0.311599888
+2021-08,Matabeleland South,0.771298939
+2021-09,Matabeleland South,2.961704509
+2021-10,Matabeleland South,14.68410536
+2021-11,Matabeleland South,54.89967082
+2021-12,Matabeleland South,156.5934576
+2022-01,Matabeleland South,133.5660609
+2022-02,Matabeleland South,14.79438328
+2022-03,Matabeleland South,42.00467827
+2022-04,Matabeleland South,36.06444527
+2022-05,Matabeleland South,4.767389509
+2022-06,Matabeleland South,3.311238982
+2022-07,Matabeleland South,0.374720594
+2022-08,Matabeleland South,0.737512975
+2022-09,Matabeleland South,2.823138627
+2022-10,Matabeleland South,22.40658145
+2022-11,Matabeleland South,59.92005564
+2022-12,Matabeleland South,43.56005455
+2023-01,Matabeleland South,56.80767464
+2023-02,Matabeleland South,85.33609982
+2023-03,Matabeleland South,26.30389718
+2023-04,Matabeleland South,8.259060627
+2023-05,Matabeleland South,4.153623845
+2023-06,Matabeleland South,3.130694136
+2023-07,Matabeleland South,0.32684859
+2023-08,Matabeleland South,1.134599779
+2023-09,Matabeleland South,3.830029127
+2023-10,Matabeleland South,21.57507391
+2023-11,Matabeleland South,16.99395791
+2023-12,Matabeleland South,122.6825465
+2024-01,Matabeleland South,85.79481682
+2024-02,Matabeleland South,9.012200718
+2024-03,Matabeleland South,18.93161073
+2024-04,Matabeleland South,21.34051855
+2024-05,Matabeleland South,3.048912609
+2024-06,Matabeleland South,3.848743082
+2024-07,Matabeleland South,0.195556692
+2024-08,Matabeleland South,0.798915146
+2024-09,Matabeleland South,4.098452836
+2024-10,Matabeleland South,14.79222227
+2024-11,Matabeleland South,86.295223
+2024-12,Matabeleland South,144.0861845
+2025-01,Matabeleland South,228.1859364
+2025-02,Matabeleland South,158.7789295
+2025-03,Matabeleland South,14.36607732
+2025-04,Matabeleland South,39.48242536
+2025-05,Matabeleland South,3.237067791
+2025-06,Matabeleland South,2.395008209
+2025-07,Matabeleland South,0.313510063
+2025-08,Matabeleland South,0.759830992
+2025-09,Matabeleland South,5.608314827
+2025-10,Matabeleland South,16.57761309
+2025-11,Matabeleland South,128.6798545
+2025-12,Matabeleland South,148.2809118
+2020-01,Midlands,153.6306136
+2020-02,Midlands,151.8317313
+2020-03,Midlands,24.82474747
+2020-04,Midlands,28.12121693
+2020-05,Midlands,4.710005987
+2020-06,Midlands,3.232096409
+2020-07,Midlands,0.872760734
+2020-08,Midlands,1.555483503
+2020-09,Midlands,8.3232726
+2020-10,Midlands,37.84959207
+2020-11,Midlands,83.5161024
+2020-12,Midlands,260.670724
+2021-01,Midlands,237.0602693
+2021-02,Midlands,140.0197409
+2021-03,Midlands,26.25044847
+2021-04,Midlands,8.32943652
+2021-05,Midlands,4.244209327
+2021-06,Midlands,3.225994493
+2021-07,Midlands,0.877110296
+2021-08,Midlands,1.488495459
+2021-09,Midlands,2.72661576
+2021-10,Midlands,23.5000332
+2021-11,Midlands,59.12695827
+2021-12,Midlands,133.9362787
+2022-01,Midlands,265.7751873
+2022-02,Midlands,24.55593307
+2022-03,Midlands,43.54645427
+2022-04,Midlands,61.77457827
+2022-05,Midlands,3.833580753
+2022-06,Midlands,3.33685384
+2022-07,Midlands,0.878428832
+2022-08,Midlands,1.441413921
+2022-09,Midlands,2.477314713
+2022-10,Midlands,24.27132253
+2022-11,Midlands,108.8166514
+2022-12,Midlands,76.16258167
+2023-01,Midlands,124.7827027
+2023-02,Midlands,121.362402
+2023-03,Midlands,27.89094513
+2023-04,Midlands,8.688030187
+2023-05,Midlands,3.730980753
+2023-06,Midlands,3.261434675
+2023-07,Midlands,0.865550179
+2023-08,Midlands,1.626627832
+2023-09,Midlands,4.471858047
+2023-10,Midlands,50.54440173
+2023-11,Midlands,28.7603568
+2023-12,Midlands,217.4331193
+2024-01,Midlands,119.5456692
+2024-02,Midlands,13.92033007
+2024-03,Midlands,29.71067013
+2024-04,Midlands,22.30144667
+2024-05,Midlands,3.5844052
+2024-06,Midlands,4.272533457
+2024-07,Midlands,0.695185457
+2024-08,Midlands,1.515263496
+2024-09,Midlands,2.609712233
+2024-10,Midlands,22.47563743
+2024-11,Midlands,102.1592161
+2024-12,Midlands,159.120209
+2025-01,Midlands,263.777
+2025-02,Midlands,231.399608
+2025-03,Midlands,26.94365913
+2025-04,Midlands,46.03488787
+2025-05,Midlands,4.555787927
+2025-06,Midlands,2.019998876
+2025-07,Midlands,0.898321424
+2025-08,Midlands,1.292604389
+2025-09,Midlands,2.867669807
+2025-10,Midlands,9.837391167
+2025-11,Midlands,148.8500437
+2025-12,Midlands,201.984992

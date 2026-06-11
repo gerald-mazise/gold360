@@ -1,0 +1,421 @@
+{
+  "run_id": "20260609_202432",
+  "timestamp": "2026-06-09T20:24:32.046121",
+  "seed": 42,
+  "config": {
+    "eval_mode": "self_contained",
+    "project": {
+      "name": "GOLD360",
+      "version": "0.3.0",
+      "environment": "development",
+      "seed": 42
+    },
+    "data": {
+      "raw_dir": "data/raw",
+      "processed_dir": "data/processed",
+      "feature_store_dir": "data/feature_store",
+      "synthetic_dir": "data/synthetic",
+      "temporal_granularity": "monthly",
+      "master_key": "month_year",
+      "date_format": "%Y-%m"
+    },
+    "features": {
+      "version": "v001",
+      "store_backend": "parquet",
+      "compute_parallel": false,
+      "max_lag_months": 6,
+      "rolling_windows": [
+        3,
+        6
+      ],
+      "excluded_features": [
+        "delivery_efficiency",
+        "delivery_gap_ratio",
+        "delivery_efficiency_roll3",
+        "delivery_efficiency_roll3_std",
+        "energy_stress"
+      ]
+    },
+    "weak_supervision": {
+      "min_lf_coverage": 0.3,
+      "fusion_method": "majority_vote",
+      "confidence_threshold": 0.5,
+      "pseudo_label_threshold": 0.5,
+      "store_audit_trail": true
+    },
+    "anomaly": {
+      "models": {
+        "isolation_forest": {
+          "n_estimators": 200,
+          "contamination": 0.05,
+          "random_state": 42
+        },
+        "ecod": {
+          "contamination": 0.05
+        },
+        "lof": {
+          "n_neighbors": 20,
+          "contamination": 0.05
+        }
+      },
+      "ensemble_weights": {
+        "isolation_forest": 0.4,
+        "ecod": 0.3,
+        "lof": 0.3
+      },
+      "consensus_threshold": 50.0
+    },
+    "model": {
+      "primary": "catboost",
+      "catboost": {
+        "iterations": 1000,
+        "learning_rate": 0.03,
+        "depth": 6,
+        "l2_leaf_reg": 3.0,
+        "border_count": 128,
+        "early_stopping_rounds": 50,
+        "random_seed": 42,
+        "verbose": false,
+        "class_weight": [
+          1.0,
+          2.0
+        ]
+      },
+      "calibration": {
+        "enabled": true,
+        "method": "isotonic",
+        "cv": 3
+      },
+      "risk_categories": {
+        "low": [
+          0.0,
+          0.25
+        ],
+        "moderate": [
+          0.25,
+          0.5
+        ],
+        "elevated": [
+          0.5,
+          0.75
+        ],
+        "high": [
+          0.75,
+          1.0
+        ]
+      }
+    },
+    "validation": {
+      "temporal_split": {
+        "train_start": "2020-01",
+        "train_end": "2023-12",
+        "val_start": "2024-01",
+        "val_end": "2024-06",
+        "test_start": "2024-07",
+        "test_end": "2025-12"
+      },
+      "n_folds": 5,
+      "metrics": [
+        "roc_auc",
+        "precision",
+        "recall",
+        "f1",
+        "calibration_error"
+      ]
+    },
+    "pipeline": {
+      "cache_intermediate": true,
+      "parallel_workers": 1,
+      "log_level": "INFO",
+      "checkpoint_dir": "models/checkpoints"
+    },
+    "logging": {
+      "version": 1,
+      "formatters": {
+        "standard": {
+          "format": "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+        }
+      },
+      "handlers": {
+        "console": {
+          "class": "logging.StreamHandler",
+          "level": "INFO",
+          "formatter": "standard"
+        },
+        "file": {
+          "class": "logging.handlers.RotatingFileHandler",
+          "level": "DEBUG",
+          "formatter": "standard",
+          "filename": "logs/gold360.log",
+          "maxBytes": 10485760,
+          "backupCount": 5
+        }
+      },
+      "root": {
+        "level": "INFO",
+        "handlers": [
+          "console",
+          "file"
+        ]
+      }
+    }
+  },
+  "data_hashes": {
+    "mine_ops": "544d4bde719cefd3",
+    "gold_price": "f68e4eb98fb0c812",
+    "fx_market": "bff6e4bfac290f87",
+    "rainfall": "478acd777d27087e",
+    "policy_events": "bd92978d1bc3d43c"
+  },
+  "git_hash": "unknown",
+  "metrics": {
+    "test_metrics": {
+      "roc_auc": 0.9817,
+      "avg_precision": 0.993,
+      "brier_score": 0.09,
+      "f1_score": 0.9047,
+      "precision": 0.9916,
+      "recall": 0.8319,
+      "accuracy": 0.8726,
+      "balanced_accuracy": 0.9065,
+      "log_loss": 0.2738,
+      "matthews_corrcoef": 0.7423,
+      "cohen_kappa": 0.7167,
+      "confusion_matrix": {
+        "true_negative": 468,
+        "false_positive": 9,
+        "false_negative": 214,
+        "true_positive": 1059
+      },
+      "classification_report": {
+        "0": {
+          "precision": 0.6862170087976539,
+          "recall": 0.9811320754716981,
+          "f1-score": 0.8075927523727351,
+          "support": 477.0
+        },
+        "1": {
+          "precision": 0.9915730337078652,
+          "recall": 0.8318931657501963,
+          "f1-score": 0.9047415634344297,
+          "support": 1273.0
+        },
+        "accuracy": 0.8725714285714286,
+        "macro avg": {
+          "precision": 0.8388950212527595,
+          "recall": 0.9065126206109473,
+          "f1-score": 0.8561671579035823,
+          "support": 1750.0
+        },
+        "weighted avg": {
+          "precision": 0.9083417057751962,
+          "recall": 0.8725714285714286,
+          "f1-score": 0.8782615732193279,
+          "support": 1750.0
+        }
+      },
+      "optimal_threshold_youden": 0.1965,
+      "at_optimal_threshold": {
+        "f1": 0.9459,
+        "precision": 0.9726,
+        "recall": 0.9207,
+        "accuracy": 0.9234
+      },
+      "confidence_distribution": {
+        "mean": 0.844,
+        "median": 0.9677,
+        "std": 0.2426,
+        "pct_above_0.8": 75.26,
+        "pct_above_0.6": 85.03,
+        "pct_below_0.2": 4.17
+      },
+      "risk_distribution": {
+        "low_risk_pct": 33.31,
+        "moderate_risk_pct": 5.66,
+        "elevated_risk_pct": 5.77,
+        "high_risk_pct": 55.26
+      }
+    },
+    "cv_summary": {
+      "mean_auc": 0.9739,
+      "std_auc": 0.0097,
+      "mean_f1": 0.8918,
+      "mean_precision": 0.9512,
+      "mean_recall": 0.8409,
+      "n_folds": 5,
+      "folds": {
+        "fold": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "auc": [
+          0.9729,
+          0.9672,
+          0.9613,
+          0.9786,
+          0.9896
+        ],
+        "f1": [
+          0.8779,
+          0.8593,
+          0.8867,
+          0.9072,
+          0.9279
+        ],
+        "precision": [
+          0.8779,
+          0.9307,
+          0.9689,
+          0.9866,
+          0.9919
+        ],
+        "recall": [
+          0.8779,
+          0.7981,
+          0.8174,
+          0.8395,
+          0.8717
+        ]
+      }
+    },
+    "benchmark": {
+      "catboost": {
+        "roc_auc": 0.9692,
+        "f1": 0.8419,
+        "precision": 0.9946,
+        "recall": 0.7298
+      },
+      "xgboost": {
+        "roc_auc": 0.9676,
+        "f1": 0.8181,
+        "precision": 0.9955,
+        "recall": 0.6944
+      }
+    },
+    "ablation": [
+      {
+        "group": "ALL FEATURES",
+        "features_used": 17,
+        "auc": 0.9817,
+        "auc_delta": 0.0
+      },
+      {
+        "group": "delivery",
+        "features_removed": 3,
+        "features_used": 14,
+        "auc": 0.853,
+        "auc_delta": 0.1287
+      },
+      {
+        "group": "macro",
+        "features_removed": 3,
+        "features_used": 14,
+        "auc": 0.9747,
+        "auc_delta": 0.007
+      },
+      {
+        "group": "operational",
+        "features_removed": 4,
+        "features_used": 13,
+        "auc": 0.9014,
+        "auc_delta": 0.0803
+      },
+      {
+        "group": "governance",
+        "features_removed": 2,
+        "features_used": 15,
+        "auc": 0.9701,
+        "auc_delta": 0.0116
+      },
+      {
+        "group": "spatial",
+        "features_removed": 4,
+        "features_used": 13,
+        "auc": 0.9672,
+        "auc_delta": 0.0145
+      }
+    ],
+    "robustness": [
+      {
+        "noise_level": 0.01,
+        "mean_auc": 0.8014,
+        "std_auc": 0.0046,
+        "degradation": 0.1261,
+        "min_auc": 0.794,
+        "max_auc": 0.8076
+      },
+      {
+        "noise_level": 0.05,
+        "mean_auc": 0.7888,
+        "std_auc": 0.0163,
+        "degradation": 0.1386,
+        "min_auc": 0.7603,
+        "max_auc": 0.8095
+      },
+      {
+        "noise_level": 0.1,
+        "mean_auc": 0.7824,
+        "std_auc": 0.0069,
+        "degradation": 0.145,
+        "min_auc": 0.7723,
+        "max_auc": 0.7928
+      },
+      {
+        "noise_level": 0.2,
+        "mean_auc": 0.7577,
+        "std_auc": 0.0058,
+        "degradation": 0.1698,
+        "min_auc": 0.7469,
+        "max_auc": 0.7643
+      }
+    ],
+    "overfitting": {
+      "train_roc_auc": 0.9999,
+      "val_roc_auc": 1.0,
+      "test_roc_auc": 0.9817,
+      "train_f1": 0.989,
+      "val_f1": 0.9977,
+      "test_f1": 0.9047,
+      "train_test_auc_gap": 0.0182,
+      "overfitting_risk": "LOW",
+      "best_iteration": 664,
+      "early_stopping_used": true
+    },
+    "leakage_checks": [
+      {
+        "check": "Temporal split: train < val < test chronologically",
+        "result": "PASS",
+        "detail": "Train months 2020-01-2023-07, Val 2023-08-2024-09, Test 2024-10-2025-12"
+      },
+      {
+        "check": "No future information in features",
+        "result": "PASS",
+        "detail": "All features computed from current/previous month observations only"
+      },
+      {
+        "check": "Target derived from features, not labels",
+        "result": "PASS",
+        "detail": "Pseudo-labels are rule-based probability scores, not external ground truth"
+      },
+      {
+        "check": "Walk-forward validation respects temporal order",
+        "result": "PASS",
+        "detail": "Expanding window with 5 splits"
+      },
+      {
+        "check": "Noise robustness validated",
+        "result": "PASS",
+        "detail": "Max noise 20%, max degradation 0.1698"
+      },
+      {
+        "check": "Ablation shows feature importance is distributed",
+        "result": "PASS",
+        "detail": "No single group dominates (max delta: 0.1287)"
+      }
+    ]
+  },
+  "artifacts": {}
+}

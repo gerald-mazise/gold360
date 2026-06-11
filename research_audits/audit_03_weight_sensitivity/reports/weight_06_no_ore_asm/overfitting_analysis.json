@@ -1,0 +1,6 @@
+{
+  "train_roc_auc": 1.0,
+  "test_roc_auc": 0.7144,
+  "train_test_gap": 0.2856,
+  "risk": "MODERATE"
+}

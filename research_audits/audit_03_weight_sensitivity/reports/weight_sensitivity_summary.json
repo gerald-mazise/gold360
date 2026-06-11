@@ -1,0 +1,230 @@
+[
+  {
+    "experiment": 1,
+    "label": "baseline",
+    "weights": {
+      "delivery": 0.3,
+      "fx": 0.2,
+      "border": 0.15,
+      "policy": 0.15,
+      "ore_grade": 0.1,
+      "asm": 0.1
+    },
+    "roc_auc": 0.9817,
+    "f1": 0.9047,
+    "precision": 0.9916,
+    "recall": 0.8319,
+    "mcc": 0.7423,
+    "cv_mean_auc": 0.9739,
+    "positive_rate_test": null
+  },
+  {
+    "experiment": 2,
+    "label": "delivery_heavy",
+    "weights": {
+      "delivery": 0.4,
+      "fx": 0.2,
+      "border": 0.1,
+      "policy": 0.1,
+      "ore_grade": 0.1,
+      "asm": 0.1
+    },
+    "roc_auc": 0.989,
+    "f1": 0.9302,
+    "precision": 0.9951,
+    "recall": 0.8733,
+    "mcc": 0.754,
+    "cv_mean_auc": 0.9901,
+    "positive_rate_test": null
+  },
+  {
+    "experiment": 3,
+    "label": "fx_heavy",
+    "weights": {
+      "delivery": 0.2,
+      "fx": 0.3,
+      "border": 0.15,
+      "policy": 0.15,
+      "ore_grade": 0.1,
+      "asm": 0.1
+    },
+    "roc_auc": 0.9673,
+    "f1": 0.8018,
+    "precision": 0.999,
+    "recall": 0.6697,
+    "mcc": 0.5129,
+    "cv_mean_auc": 0.9185,
+    "positive_rate_test": null
+  },
+  {
+    "experiment": 4,
+    "label": "border_heavy",
+    "weights": {
+      "delivery": 0.3,
+      "fx": 0.2,
+      "border": 0.25,
+      "policy": 0.15,
+      "ore_grade": 0.05,
+      "asm": 0.05
+    },
+    "roc_auc": 0.9808,
+    "f1": 0.8532,
+    "precision": 0.9913,
+    "recall": 0.7488,
+    "mcc": 0.7218,
+    "cv_mean_auc": 0.9451,
+    "positive_rate_test": null
+  },
+  {
+    "experiment": 5,
+    "label": "policy_heavy",
+    "weights": {
+      "delivery": 0.3,
+      "fx": 0.2,
+      "border": 0.15,
+      "policy": 0.25,
+      "ore_grade": 0.05,
+      "asm": 0.05
+    },
+    "roc_auc": 0.9558,
+    "f1": 0.7015,
+    "precision": 0.9943,
+    "recall": 0.542,
+    "mcc": 0.5837,
+    "cv_mean_auc": 0.9289,
+    "positive_rate_test": null
+  },
+  {
+    "experiment": 6,
+    "label": "no_ore_asm",
+    "weights": {
+      "delivery": 0.25,
+      "fx": 0.25,
+      "border": 0.25,
+      "policy": 0.25,
+      "ore_grade": 0.0,
+      "asm": 0.0
+    },
+    "roc_auc": 0.7144,
+    "f1": 0.0427,
+    "precision": 1.0,
+    "recall": 0.0218,
+    "mcc": 0.113,
+    "cv_mean_auc": 0.8599,
+    "positive_rate_test": null
+  },
+  {
+    "experiment": 7,
+    "label": "max_delivery",
+    "weights": {
+      "delivery": 0.5,
+      "fx": 0.1,
+      "border": 0.1,
+      "policy": 0.1,
+      "ore_grade": 0.1,
+      "asm": 0.1
+    },
+    "roc_auc": 0.9956,
+    "f1": 0.9584,
+    "precision": 0.9983,
+    "recall": 0.9216,
+    "mcc": 0.872,
+    "cv_mean_auc": 0.9932,
+    "positive_rate_test": null
+  },
+  {
+    "experiment": 8,
+    "label": "equal_excl_ore_asm",
+    "weights": {
+      "delivery": 0.2,
+      "fx": 0.2,
+      "border": 0.2,
+      "policy": 0.2,
+      "ore_grade": 0.1,
+      "asm": 0.1
+    },
+    "roc_auc": 0.9515,
+    "f1": 0.7293,
+    "precision": 0.9916,
+    "recall": 0.5767,
+    "mcc": 0.5928,
+    "cv_mean_auc": 0.9485,
+    "positive_rate_test": null
+  },
+  {
+    "experiment": 9,
+    "label": "no_ore_double_asm",
+    "weights": {
+      "delivery": 0.3,
+      "fx": 0.2,
+      "border": 0.15,
+      "policy": 0.15,
+      "ore_grade": 0.0,
+      "asm": 0.2
+    },
+    "roc_auc": 0.9771,
+    "f1": 0.8982,
+    "precision": 0.9952,
+    "recall": 0.8185,
+    "mcc": 0.732,
+    "cv_mean_auc": 0.991,
+    "positive_rate_test": null
+  },
+  {
+    "experiment": 10,
+    "label": "ore_asm_heavy",
+    "weights": {
+      "delivery": 0.15,
+      "fx": 0.15,
+      "border": 0.15,
+      "policy": 0.15,
+      "ore_grade": 0.2,
+      "asm": 0.2
+    },
+    "roc_auc": 0.9886,
+    "f1": 0.9143,
+    "precision": 0.999,
+    "recall": 0.8428,
+    "mcc": 0.7882,
+    "cv_mean_auc": 0.9915,
+    "positive_rate_test": null
+  },
+  {
+    "experiment": 11,
+    "label": "baseline_repeat",
+    "weights": {
+      "delivery": 0.3,
+      "fx": 0.2,
+      "border": 0.15,
+      "policy": 0.15,
+      "ore_grade": 0.1,
+      "asm": 0.1
+    },
+    "roc_auc": 0.9817,
+    "f1": 0.9047,
+    "precision": 0.9916,
+    "recall": 0.8319,
+    "mcc": 0.7423,
+    "cv_mean_auc": 0.9739,
+    "positive_rate_test": null
+  },
+  {
+    "experiment": 12,
+    "label": "no_delivery",
+    "weights": {
+      "delivery": 0.0,
+      "fx": 0.25,
+      "border": 0.25,
+      "policy": 0.25,
+      "ore_grade": 0.15,
+      "asm": 0.1
+    },
+    "roc_auc": 0.7007,
+    "f1": 0.3839,
+    "precision": 0.9597,
+    "recall": 0.2399,
+    "mcc": 0.3986,
+    "cv_mean_auc": 0.9641,
+    "positive_rate_test": null
+  }
+]

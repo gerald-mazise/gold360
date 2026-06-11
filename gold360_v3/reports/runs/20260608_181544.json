@@ -1,0 +1,414 @@
+{
+  "run_id": "20260608_181544",
+  "timestamp": "2026-06-08T18:15:44.741806",
+  "seed": 42,
+  "config": {
+    "eval_mode": "self_contained",
+    "project": {
+      "name": "GOLD360",
+      "version": "0.2.0",
+      "environment": "development",
+      "seed": 42
+    },
+    "data": {
+      "raw_dir": "data/raw",
+      "processed_dir": "data/processed",
+      "feature_store_dir": "data/feature_store",
+      "synthetic_dir": "data/synthetic",
+      "temporal_granularity": "monthly",
+      "master_key": "month_year",
+      "date_format": "%Y-%m"
+    },
+    "features": {
+      "version": "v001",
+      "store_backend": "parquet",
+      "compute_parallel": false,
+      "max_lag_months": 6,
+      "rolling_windows": [
+        3,
+        6
+      ]
+    },
+    "weak_supervision": {
+      "min_lf_coverage": 0.3,
+      "fusion_method": "majority_vote",
+      "confidence_threshold": 0.5,
+      "pseudo_label_threshold": 0.5,
+      "store_audit_trail": true
+    },
+    "anomaly": {
+      "models": {
+        "isolation_forest": {
+          "n_estimators": 200,
+          "contamination": 0.05,
+          "random_state": 42
+        },
+        "ecod": {
+          "contamination": 0.05
+        },
+        "lof": {
+          "n_neighbors": 20,
+          "contamination": 0.05
+        }
+      },
+      "ensemble_weights": {
+        "isolation_forest": 0.4,
+        "ecod": 0.3,
+        "lof": 0.3
+      },
+      "consensus_threshold": 50.0
+    },
+    "model": {
+      "primary": "catboost",
+      "catboost": {
+        "iterations": 1000,
+        "learning_rate": 0.03,
+        "depth": 6,
+        "l2_leaf_reg": 3.0,
+        "border_count": 128,
+        "early_stopping_rounds": 50,
+        "random_seed": 42,
+        "verbose": false,
+        "class_weight": [
+          1.0,
+          2.0
+        ]
+      },
+      "calibration": {
+        "enabled": true,
+        "method": "isotonic",
+        "cv": 3
+      },
+      "risk_categories": {
+        "low": [
+          0.0,
+          0.25
+        ],
+        "moderate": [
+          0.25,
+          0.5
+        ],
+        "elevated": [
+          0.5,
+          0.75
+        ],
+        "high": [
+          0.75,
+          1.0
+        ]
+      }
+    },
+    "validation": {
+      "temporal_split": {
+        "train_start": "2020-01",
+        "train_end": "2023-12",
+        "val_start": "2024-01",
+        "val_end": "2024-06",
+        "test_start": "2024-07",
+        "test_end": "2025-12"
+      },
+      "n_folds": 5,
+      "metrics": [
+        "roc_auc",
+        "precision",
+        "recall",
+        "f1",
+        "calibration_error"
+      ]
+    },
+    "pipeline": {
+      "cache_intermediate": true,
+      "parallel_workers": 1,
+      "log_level": "INFO",
+      "checkpoint_dir": "models/checkpoints"
+    },
+    "logging": {
+      "version": 1,
+      "formatters": {
+        "standard": {
+          "format": "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+        }
+      },
+      "handlers": {
+        "console": {
+          "class": "logging.StreamHandler",
+          "level": "INFO",
+          "formatter": "standard"
+        },
+        "file": {
+          "class": "logging.handlers.RotatingFileHandler",
+          "level": "DEBUG",
+          "formatter": "standard",
+          "filename": "logs/gold360.log",
+          "maxBytes": 10485760,
+          "backupCount": 5
+        }
+      },
+      "root": {
+        "level": "INFO",
+        "handlers": [
+          "console",
+          "file"
+        ]
+      }
+    }
+  },
+  "data_hashes": {
+    "mine_ops": "544d4bde719cefd3",
+    "gold_price": "f68e4eb98fb0c812",
+    "fx_market": "bff6e4bfac290f87",
+    "rainfall": "478acd777d27087e",
+    "policy_events": "bd92978d1bc3d43c"
+  },
+  "git_hash": "unknown",
+  "metrics": {
+    "test_metrics": {
+      "roc_auc": 0.9856,
+      "avg_precision": 0.994,
+      "brier_score": 0.1004,
+      "f1_score": 0.9037,
+      "precision": 0.9981,
+      "recall": 0.8256,
+      "accuracy": 0.872,
+      "balanced_accuracy": 0.9107,
+      "log_loss": 0.3272,
+      "matthews_corrcoef": 0.7471,
+      "cohen_kappa": 0.7179,
+      "confusion_matrix": {
+        "true_negative": 475,
+        "false_positive": 2,
+        "false_negative": 222,
+        "true_positive": 1051
+      },
+      "classification_report": {
+        "0": {
+          "precision": 0.6814921090387375,
+          "recall": 0.9958071278825996,
+          "f1-score": 0.8091993185689949,
+          "support": 477.0
+        },
+        "1": {
+          "precision": 0.9981006647673314,
+          "recall": 0.8256087981146897,
+          "f1-score": 0.9036973344797936,
+          "support": 1273.0
+        },
+        "accuracy": 0.872,
+        "macro avg": {
+          "precision": 0.8397963869030345,
+          "recall": 0.9107079629986446,
+          "f1-score": 0.8564483265243943,
+          "support": 1750.0
+        },
+        "weighted avg": {
+          "precision": 0.9118022184344518,
+          "recall": 0.872,
+          "f1-score": 0.8779398752858216,
+          "support": 1750.0
+        }
+      },
+      "optimal_threshold_youden": 0.1258,
+      "at_optimal_threshold": {
+        "f1": 0.9448,
+        "precision": 0.9855,
+        "recall": 0.9073,
+        "accuracy": 0.9229
+      },
+      "confidence_distribution": {
+        "mean": 0.882,
+        "median": 0.9681,
+        "std": 0.2155,
+        "pct_above_0.8": 81.31,
+        "pct_above_0.6": 89.14,
+        "pct_below_0.2": 2.69
+      },
+      "risk_distribution": {
+        "low_risk_pct": 36.57,
+        "moderate_risk_pct": 3.26,
+        "elevated_risk_pct": 4.69,
+        "high_risk_pct": 55.49
+      }
+    },
+    "cv_summary": {
+      "mean_auc": 0.9921,
+      "std_auc": 0.0025,
+      "mean_f1": 0.8978,
+      "mean_precision": 0.9945,
+      "mean_recall": 0.8194,
+      "n_folds": 5,
+      "folds": {
+        "fold": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "auc": [
+          0.9919,
+          0.9916,
+          0.9887,
+          0.9916,
+          0.9966
+        ],
+        "f1": [
+          0.9279,
+          0.8801,
+          0.8827,
+          0.8794,
+          0.9187
+        ],
+        "precision": [
+          0.9744,
+          0.998,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall": [
+          0.8857,
+          0.7872,
+          0.79,
+          0.7847,
+          0.8496
+        ]
+      }
+    },
+    "benchmark": {
+      "catboost": {
+        "roc_auc": 0.9798,
+        "f1": 0.8086,
+        "precision": 1.0,
+        "recall": 0.6787
+      },
+      "xgboost": {
+        "roc_auc": 0.9756,
+        "f1": 0.7893,
+        "precision": 1.0,
+        "recall": 0.652
+      }
+    },
+    "ablation": [
+      {
+        "group": "ALL FEATURES",
+        "features_used": 22,
+        "auc": 0.9856,
+        "auc_delta": 0.0
+      },
+      {
+        "group": "delivery",
+        "features_removed": 7,
+        "features_used": 15,
+        "auc": 0.853,
+        "auc_delta": 0.1326
+      },
+      {
+        "group": "macro",
+        "features_removed": 3,
+        "features_used": 19,
+        "auc": 0.988,
+        "auc_delta": -0.0024
+      },
+      {
+        "group": "operational",
+        "features_removed": 5,
+        "features_used": 17,
+        "auc": 0.9722,
+        "auc_delta": 0.0135
+      },
+      {
+        "group": "governance",
+        "features_removed": 2,
+        "features_used": 20,
+        "auc": 0.9824,
+        "auc_delta": 0.0032
+      },
+      {
+        "group": "spatial",
+        "features_removed": 4,
+        "features_used": 18,
+        "auc": 0.9871,
+        "auc_delta": -0.0015
+      }
+    ],
+    "robustness": [
+      {
+        "noise_level": 0.01,
+        "mean_auc": 0.9666,
+        "std_auc": 0.0016,
+        "degradation": -0.0022,
+        "min_auc": 0.9648,
+        "max_auc": 0.9694
+      },
+      {
+        "noise_level": 0.05,
+        "mean_auc": 0.9463,
+        "std_auc": 0.005,
+        "degradation": 0.018,
+        "min_auc": 0.9388,
+        "max_auc": 0.9521
+      },
+      {
+        "noise_level": 0.1,
+        "mean_auc": 0.9009,
+        "std_auc": 0.0019,
+        "degradation": 0.0634,
+        "min_auc": 0.898,
+        "max_auc": 0.9029
+      },
+      {
+        "noise_level": 0.2,
+        "mean_auc": 0.8213,
+        "std_auc": 0.0051,
+        "degradation": 0.1431,
+        "min_auc": 0.8157,
+        "max_auc": 0.8293
+      }
+    ],
+    "overfitting": {
+      "train_roc_auc": 1.0,
+      "val_roc_auc": 1.0,
+      "test_roc_auc": 0.9856,
+      "train_f1": 0.996,
+      "val_f1": 1.0,
+      "test_f1": 0.9037,
+      "train_test_auc_gap": 0.0144,
+      "overfitting_risk": "LOW",
+      "best_iteration": 344,
+      "early_stopping_used": true
+    },
+    "leakage_checks": [
+      {
+        "check": "Temporal split: train < val < test chronologically",
+        "result": "PASS",
+        "detail": "Train months 2020-01-2023-07, Val 2023-08-2024-09, Test 2024-10-2025-12"
+      },
+      {
+        "check": "No future information in features",
+        "result": "PASS",
+        "detail": "All features computed from current/previous month observations only"
+      },
+      {
+        "check": "Target derived from features, not labels",
+        "result": "PASS",
+        "detail": "Pseudo-labels are rule-based probability scores, not external ground truth"
+      },
+      {
+        "check": "Walk-forward validation respects temporal order",
+        "result": "PASS",
+        "detail": "Expanding window with 5 splits"
+      },
+      {
+        "check": "Noise robustness validated",
+        "result": "PASS",
+        "detail": "Max noise 20%, max degradation 0.1431"
+      },
+      {
+        "check": "Ablation shows feature importance is distributed",
+        "result": "PASS",
+        "detail": "No single group dominates (max delta: 0.1326)"
+      }
+    ]
+  },
+  "artifacts": {}
+}

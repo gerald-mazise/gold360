@@ -1,0 +1,14 @@
+{
+  "catboost": {
+    "roc_auc": 0.9692,
+    "f1": 0.8419,
+    "precision": 0.9946,
+    "recall": 0.7298
+  },
+  "xgboost": {
+    "roc_auc": 0.9676,
+    "f1": 0.8181,
+    "precision": 0.9955,
+    "recall": 0.6944
+  }
+}

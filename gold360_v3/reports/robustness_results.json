@@ -1,0 +1,34 @@
+[
+  {
+    "noise_level": 0.01,
+    "mean_auc": 0.8014,
+    "std_auc": 0.0046,
+    "degradation": 0.1261,
+    "min_auc": 0.794,
+    "max_auc": 0.8076
+  },
+  {
+    "noise_level": 0.05,
+    "mean_auc": 0.7888,
+    "std_auc": 0.0163,
+    "degradation": 0.1386,
+    "min_auc": 0.7603,
+    "max_auc": 0.8095
+  },
+  {
+    "noise_level": 0.1,
+    "mean_auc": 0.7824,
+    "std_auc": 0.0069,
+    "degradation": 0.145,
+    "min_auc": 0.7723,
+    "max_auc": 0.7928
+  },
+  {
+    "noise_level": 0.2,
+    "mean_auc": 0.7577,
+    "std_auc": 0.0058,
+    "degradation": 0.1698,
+    "min_auc": 0.7469,
+    "max_auc": 0.7643
+  }
+]

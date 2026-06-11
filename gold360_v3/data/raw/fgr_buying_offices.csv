@@ -1,0 +1,23 @@
+office_name,classification,province,district,physical_address,operational_host,latitude ,longitude
+Harare Head Office,Primary Refining Complex,Harare,Harare,"No. 1 George Drive, Msasa",FGR Primary Complex,-17.8392,31.1167
+Bulawayo Branch,Regional Center,Bulawayo,Bulawayo,Cnr 10th Ave / Fife Street,ZB Bank,-20.1583,28.5833
+Bindura Branch,Regional Center,Mashonaland Central,Bindura,No. 28 Robert Mugabe Way,ZB Bank,-17.3,31.3333
+Chinhoyi Branch,Regional Center,Mashonaland West,Makonde,No. 47 Magamba Way,ZB Bank,-17.3667,30.2
+Gwanda Branch,Regional Center,Matabeleland South,Gwanda,"Shop No. 8, NSSA Complex",ZB Bank,-20.9333,29
+Gweru Branch,Regional Center,Midlands,Gweru,No. 69 Robert Mugabe Way,ZB Bank,-19.45,29.8167
+Kadoma Branch,Regional Center,Mashonaland West,Kadoma,No. 42 Robert Mugabe Street,ZB Bank,-18.3333,29.9167
+Kwekwe Branch,Regional Center,Midlands,Kwekwe,No. 90 Robert Mugabe Way,ZB Bank,-18.9167,29.8167
+Masvingo Branch,Regional Center,Masvingo,Masvingo,No. 39 Robert Mugabe Way,ZB Bank,-20.0833,30.8333
+Mutare Branch,Regional Center,Manicaland,Mutare,88 Herbert Chitepo Street,ZB Bank,-18.9667,32.6667
+Zvishavane Branch,Regional Center,Midlands,Zvishavane,No. 86 Robert Mugabe Way,ZB Bank,-20.3333,30.0667
+Shurugwi Branch,Regional Center,Midlands,Shurugwi,No. 287/288 Beit Street,ZB Bank,-19.6667,30
+Filabusi Branch,Regional Center,Matabeleland South,Insiza,Stand 171B Mthwakazi,Insiza RDC / Agribank,-20.5333,29.2833
+Chegutu Branch,Regional Center,Mashonaland West,Chegutu,No. 116 Queen Street,CBZ Bank,-18.1333,30.15
+Mazowe Hub,Decentralized Small-Scale Hub,Mashonaland Central,Mazowe,Mazowe Post Office Building,ZIMPOST,-17.5167,30.9667
+Makaha Hub,Decentralized Small-Scale Hub,Mashonaland East,Mutoko,"Shije Shopping Centre, Makaha",Independent Depot,-17.2833,32.6167
+Mt Darwin Hub,Decentralized Small-Scale Hub,Mashonaland Central,Mount Darwin,Cnr Hospital / Bindura Road,ZIMPOST / Local Authority,-16.7833,31.5833
+Shamva Hub,Decentralized Small-Scale Hub,Mashonaland Central,Shamva,Shamva Country Club Depot,Independent Depot,-17.3,31.5667
+Ngundu Hub,Decentralized Small-Scale Hub,Masvingo,Chivi,Ngundu Halt Post Office,ZIMPOST,-20.7079,30.989
+Maphisa Hub,Decentralized Small-Scale Hub,Matabeleland South,Matobo,Southern Region Command Office,ZRP / FGR Joint Command,-21.05,28.45
+Mashava Hub,Decentralized Small-Scale Hub,Masvingo,Masvingo,GZU Mashava Campus Sector,Great Zimbabwe University,-20.0366,30.4822
+Mberengwa Hub,Decentralized Small-Scale Hub,Midlands,Mberengwa,Mberengwa Township Post Office,ZIMPOST,-20.4833,29.9167

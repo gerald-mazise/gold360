@@ -1,0 +1,100 @@
+# GOLD360 Data Source Registry
+
+data_sources:
+  fgr_deliveries:
+    path: data/raw/fgr_gold_deliveries_quarterly_verified_zimbabwe_2020_2021.csv
+    type: observed
+    frequency: quarterly
+    primary_key: period
+    description: FGR gold deliveries from small-scale and primary producers
+
+  zimstat_production:
+    path: data/raw/zimstat_gold_production_quarterly_zimbabwe_2020_2025.csv
+    type: observed
+    frequency: quarterly
+    primary_key: period
+    description: ZIMSTAT national gold production estimates
+
+  synthetic_mine_ops:
+    path: data/raw/synthetic_mine_ops_monthly_zimbabwe_2020_2025.csv
+    type: synthetic
+    frequency: monthly
+    primary_key: [mine_id, month]
+    description: Synthetic mine-level operational data for MVP prototyping
+
+  gold_price:
+    path: data/raw/gold_price_monthly.csv
+    type: observed
+    frequency: monthly
+    primary_key: date
+    description: LBMA monthly gold price in USD
+
+  fx_market:
+    path: data/raw/fx_market_annual.csv
+    type: observed
+    frequency: annual
+    primary_key: year
+    description: Official and parallel exchange rates
+
+  inflation:
+    path: data/raw/inflation_annual.csv
+    type: observed
+    frequency: annual
+    primary_key: year
+    description: Annual inflation indicators
+
+  cpi:
+    path: data/raw/zimbabwe_inflation_imf_avg_cpi_annual_2010_2025.csv
+    type: observed
+    frequency: annual
+    primary_key: period
+    description: IMF CPI index for Zimbabwe
+
+  rainfall:
+    path: data/raw/rainfall_province_monthly_zimbabwe_2020_2025.csv
+    type: observed
+    frequency: monthly
+    primary_key: [year_month, province]
+    description: Provincial monthly rainfall measurements
+
+  energy:
+    path: data/raw/zimbabwe_primary_energy_consumption_annual_2020_2024.csv
+    type: observed
+    frequency: annual
+    primary_key: year
+    description: Primary energy consumption proxy
+
+  policy_events:
+    path: data/raw/zimbabwe_gold_policy_event_intelligence_2020_2025.csv
+    type: observed
+    frequency: event
+    primary_key: null
+    description: Policy event intelligence timeline
+
+  fgr_offices:
+    path: data/raw/fgr_buying_offices.csv
+    type: observed
+    frequency: static
+    primary_key: office_name
+    description: FGR buying office infrastructure
+
+  mirror_trade:
+    path: data/raw/gold_mirror_trade_discrepancy_zimbabwe_2020_2024.csv
+    type: observed
+    frequency: annual
+    primary_key: year
+    description: Gold mirror trade discrepancy data
+
+  gold_exports:
+    path: data/raw/gold_exports_annual.csv
+    type: observed
+    frequency: annual
+    primary_key: year
+    description: Official gold export data
+
+  smuggling_incidents:
+    path: data/raw/gold_smuggling_incident_log_zimbabwe_2020_2025.csv
+    type: observed
+    frequency: event
+    primary_key: null
+    description: Known smuggling incident log (for corridor risk calibration only)

@@ -1,0 +1,31 @@
+{
+  "feature_cols": [
+    "border_distance_km",
+    "border_risk",
+    "delivery_gap_kg",
+    "delivery_gap_kg_roll3",
+    "delivery_gap_kg_roll3_std",
+    "fgr_access",
+    "fgr_distance_km",
+    "fx_spread_pct",
+    "gold_price_usd",
+    "inflation_rate",
+    "license_encoded",
+    "miner_type_asm",
+    "ore_grade_efficiency",
+    "ore_processed_tonnes",
+    "payment_delay_days",
+    "policy_shock_flag",
+    "rainfall_raw"
+  ],
+  "n_features": 17,
+  "audit_name": "Weight sensitivity: delivery_heavy",
+  "risk_weights": {
+    "delivery": 0.4,
+    "fx": 0.2,
+    "border": 0.1,
+    "policy": 0.1,
+    "ore_grade": 0.1,
+    "asm": 0.1
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "group": "ALL",
+    "auc": 0.9207,
+    "delta": 0.0
+  },
+  {
+    "group": "delivery",
+    "auc": 0.8179,
+    "delta": 0.1029
+  },
+  {
+    "group": "macro",
+    "auc": 0.9032,
+    "delta": 0.0176
+  },
+  {
+    "group": "operational",
+    "auc": 0.8701,
+    "delta": 0.0506
+  },
+  {
+    "group": "governance",
+    "auc": 0.8894,
+    "delta": 0.0313
+  },
+  {
+    "group": "spatial",
+    "auc": 0.894,
+    "delta": 0.0267
+  }
+]

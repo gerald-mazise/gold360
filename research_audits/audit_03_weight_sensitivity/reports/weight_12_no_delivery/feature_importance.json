@@ -1,0 +1,70 @@
+[
+  {
+    "feature": "policy_shock_flag",
+    "importance": 14.955642154491576
+  },
+  {
+    "feature": "border_risk",
+    "importance": 14.446517345618998
+  },
+  {
+    "feature": "fx_spread_pct",
+    "importance": 14.307379138460593
+  },
+  {
+    "feature": "inflation_rate",
+    "importance": 14.3056830307415
+  },
+  {
+    "feature": "ore_grade_efficiency",
+    "importance": 10.12059433201101
+  },
+  {
+    "feature": "border_distance_km",
+    "importance": 9.955729776590609
+  },
+  {
+    "feature": "miner_type_asm",
+    "importance": 5.2265883514193385
+  },
+  {
+    "feature": "gold_price_usd",
+    "importance": 3.416676311149765
+  },
+  {
+    "feature": "license_encoded",
+    "importance": 2.131625228181691
+  },
+  {
+    "feature": "rainfall_raw",
+    "importance": 1.921924297984378
+  },
+  {
+    "feature": "delivery_gap_kg_roll3",
+    "importance": 1.852581524915238
+  },
+  {
+    "feature": "ore_processed_tonnes",
+    "importance": 1.7302239268759438
+  },
+  {
+    "feature": "delivery_gap_kg_roll3_std",
+    "importance": 1.684463077402501
+  },
+  {
+    "feature": "fgr_distance_km",
+    "importance": 1.214032363897161
+  },
+  {
+    "feature": "payment_delay_days",
+    "importance": 1.1923923579437807
+  },
+  {
+    "feature": "delivery_gap_kg",
+    "importance": 0.9550210950922284
+  },
+  {
+    "feature": "fgr_access",
+    "importance": 0.5829256872236972
+  }
+]

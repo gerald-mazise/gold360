@@ -1,0 +1,43 @@
+[
+  {
+    "group": "ALL FEATURES",
+    "features_used": 17,
+    "auc": 0.9817,
+    "auc_delta": 0.0
+  },
+  {
+    "group": "delivery",
+    "features_removed": 3,
+    "features_used": 14,
+    "auc": 0.853,
+    "auc_delta": 0.1287
+  },
+  {
+    "group": "macro",
+    "features_removed": 3,
+    "features_used": 14,
+    "auc": 0.9747,
+    "auc_delta": 0.007
+  },
+  {
+    "group": "operational",
+    "features_removed": 4,
+    "features_used": 13,
+    "auc": 0.9014,
+    "auc_delta": 0.0803
+  },
+  {
+    "group": "governance",
+    "features_removed": 2,
+    "features_used": 15,
+    "auc": 0.9701,
+    "auc_delta": 0.0116
+  },
+  {
+    "group": "spatial",
+    "features_removed": 4,
+    "features_used": 13,
+    "auc": 0.9672,
+    "auc_delta": 0.0145
+  }
+]

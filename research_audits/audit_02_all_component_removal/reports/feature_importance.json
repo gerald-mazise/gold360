@@ -1,0 +1,50 @@
+[
+  {
+    "feature": "delivery_gap_kg",
+    "importance": 16.52435040831849
+  },
+  {
+    "feature": "ore_processed_tonnes",
+    "importance": 13.119755667289661
+  },
+  {
+    "feature": "license_encoded",
+    "importance": 12.811580439585006
+  },
+  {
+    "feature": "inflation_rate",
+    "importance": 10.80419625865256
+  },
+  {
+    "feature": "gold_price_usd",
+    "importance": 9.26296951737773
+  },
+  {
+    "feature": "border_distance_km",
+    "importance": 7.75516814561741
+  },
+  {
+    "feature": "delivery_gap_kg_roll3",
+    "importance": 7.142212877675218
+  },
+  {
+    "feature": "delivery_gap_kg_roll3_std",
+    "importance": 6.215831039211334
+  },
+  {
+    "feature": "payment_delay_days",
+    "importance": 5.111924158947876
+  },
+  {
+    "feature": "rainfall_raw",
+    "importance": 4.828110312162578
+  },
+  {
+    "feature": "fgr_access",
+    "importance": 3.2146104096500614
+  },
+  {
+    "feature": "fgr_distance_km",
+    "importance": 3.2092907655120784
+  }
+]

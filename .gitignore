@@ -1,0 +1,52 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Build/packaging metadata
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Pytest
+.pytest_cache/
+
+# MLflow
+mlflow.db
+mlruns/
+
+# Logs
+logs/
+*.log
+
+# CatBoost training artifacts
+catboost_info/
+
+# Generated model files
+models/
+
+# Regenerable data files
+data/feature_store/
+
+# Dashboard (self-contained HTML, not ready for repo)
+dashboard_new/
+
+# Generated figures — keep only selected PNGs (see outputs/figures/)
+outputs/figures/*.svg
+outputs/figures/figure_catalog.xlsx
+
+# OS/IDE files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Junk
+New Text Document.txt

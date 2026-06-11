@@ -1,0 +1,22 @@
+[
+  {
+    "noise_level": 0.01,
+    "mean_auc": 0.6428,
+    "degradation": 0.0422
+  },
+  {
+    "noise_level": 0.05,
+    "mean_auc": 0.6354,
+    "degradation": 0.0496
+  },
+  {
+    "noise_level": 0.1,
+    "mean_auc": 0.6415,
+    "degradation": 0.0435
+  },
+  {
+    "noise_level": 0.2,
+    "mean_auc": 0.6429,
+    "degradation": 0.0421
+  }
+]

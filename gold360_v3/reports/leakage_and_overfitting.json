@@ -1,0 +1,46 @@
+{
+  "overfitting_analysis": {
+    "train_roc_auc": 0.9999,
+    "val_roc_auc": 1.0,
+    "test_roc_auc": 0.9817,
+    "train_f1": 0.989,
+    "val_f1": 0.9977,
+    "test_f1": 0.9047,
+    "train_test_auc_gap": 0.0182,
+    "overfitting_risk": "LOW",
+    "best_iteration": 664,
+    "early_stopping_used": true
+  },
+  "leakage_checks": [
+    {
+      "check": "Temporal split: train < val < test chronologically",
+      "result": "PASS",
+      "detail": "Train months 2020-01-2023-07, Val 2023-08-2024-09, Test 2024-10-2025-12"
+    },
+    {
+      "check": "No future information in features",
+      "result": "PASS",
+      "detail": "All features computed from current/previous month observations only"
+    },
+    {
+      "check": "Target derived from features, not labels",
+      "result": "PASS",
+      "detail": "Pseudo-labels are rule-based probability scores, not external ground truth"
+    },
+    {
+      "check": "Walk-forward validation respects temporal order",
+      "result": "PASS",
+      "detail": "Expanding window with 5 splits"
+    },
+    {
+      "check": "Noise robustness validated",
+      "result": "PASS",
+      "detail": "Max noise 20%, max degradation 0.1698"
+    },
+    {
+      "check": "Ablation shows feature importance is distributed",
+      "result": "PASS",
+      "detail": "No single group dominates (max delta: 0.1287)"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+# GOLD360 Feature Registry Configuration
+
+feature_groups:
+  delivery:
+    features:
+      - name: delivery_gap_kg
+        formula: "estimated_gold_yield_kg - official_delivery_kg"
+        type: continuous
+        category: core
+      - name: delivery_efficiency
+        formula: "official_delivery_kg / estimated_gold_yield_kg"
+        type: ratio
+        category: core
+        deprecated: true
+        reason: "Target leakage — mathematically linked to pseudo-label construction"
+      - name: delivery_gap_ratio
+        formula: "delivery_gap_kg / estimated_gold_yield_kg"
+        type: ratio
+        category: core
+        deprecated: true
+        reason: "Target leakage — used in pseudo-label risk score (30% weight)"
+      - name: rolling_delivery_change_3m
+        formula: "rolling_3m_delivery - rolling_3m_expected"
+        type: continuous
+        category: trend
+      - name: delivery_volatility_6m
+        formula: "std(official_delivery_kg, 6m)"
+        type: continuous
+        category: risk
+
+  macro:
+    features:
+      - name: fx_spread_pct
+        formula: "((parallel_rate - official_rate) / official_rate) * 100"
+        type: percentage
+        category: core
+      - name: inflation_pressure
+        formula: "rolling_3m_inflation_change"
+        type: continuous
+        category: core
+      - name: macro_instability_index
+        formula: "composite(fx_spread_pct, inflation_pressure, gold_volatility)"
+        type: index
+        category: composite
+      - name: gold_price_momentum
+        formula: "pct_change(gold_price_usd, 3m)"
+        type: percentage
+        category: trend
+      - name: gold_price_volatility
+        formula: "rolling_std(gold_price_usd, 6m)"
+        type: continuous
+        category: risk
+
+  operational:
+    features:
+      - name: ore_grade_efficiency
+        formula: "estimated_gold_yield_kg / ore_processed_tonnes"
+        type: ratio
+        category: efficiency
+      - name: recovery_efficiency
+        formula: "recovery_rate_pct / 100"
+        type: ratio
+        category: efficiency
+      - name: inventory_carryover_ratio
+        formula: "inventory_carryover_kg / estimated_gold_yield_kg"
+        type: ratio
+        category: risk
+      - name: rainfall_disruption
+        formula: "zscore(rainfall_mm, province_monthly)"
+        type: zscore
+        category: disruption
+      - name: energy_stress
+        formula: "1 - (energy_consumption / max_energy_consumption)"
+        type: index
+        category: disruption
+        deprecated: true
+        reason: "Dead feature — placeholder constant, 0.0 importance"
+
+  governance:
+    features:
+      - name: policy_shock_flag
+        formula: "any_active_policy_in_month"
+        type: binary
+        category: event
+      - name: policy_shock_decay
+        formula: "exp(-months_since_policy / 3)"
+        type: decay
+        category: event
+      - name: formal_market_friction
+        formula: "1 - (compliance_score / 100)"
+        type: index
+        category: risk
+      - name: compliance_pressure
+        formula: "zscore(compliance_score, mine_history)"
+        type: zscore
+        category: risk
+
+  spatial:
+    features:
+      - name: border_risk
+        formula: "sigmoid(-0.01 * (distance_to_border_km - 100))"
+        type: index
+        category: risk
+      - name: corridor_risk
+        formula: "composite(border_risk, incident_density, road_network_score)"
+        type: index
+        category: composite
+      - name: fgr_access
+        formula: "1 / (1 + distance_to_fidelity_km / 200)"
+        type: index
+        category: access
+      - name: province_risk_density
+        formula: "rolling_province_anomaly_rate"
+        type: continuous
+        category: risk
+
+  trade:
+    features:
+      - name: mirror_trade_asymmetry
+        formula: "partner_imports_usd - reported_exports_usd"
+        type: continuous
+        category: indicator
+      - name: export_discrepancy_ratio
+        formula: "mirror_trade_asymmetry / reported_exports_usd"
+        type: ratio
+        category: indicator
+      - name: trade_gap_pressure
+        formula: "zscore(export_discrepancy_ratio, 5y)"
+        type: zscore
+        category: risk

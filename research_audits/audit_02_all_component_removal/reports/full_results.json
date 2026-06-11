@@ -1,0 +1,160 @@
+{
+  "audit_name": "Audit 02: Remove ALL pseudo-label components",
+  "test_metrics": {
+    "roc_auc": 0.9207,
+    "f1_score": 0.8759,
+    "precision": 0.9318,
+    "recall": 0.8264,
+    "balanced_accuracy": 0.8325,
+    "brier_score": 0.1167,
+    "log_loss": 0.3615,
+    "matthews_corrcoef": 0.6188,
+    "cohen_kappa": 0.6076,
+    "avg_precision": 0.9701,
+    "optimal_threshold_youden": 0.557,
+    "confusion_matrix": {
+      "tn": 400,
+      "fp": 77,
+      "fn": 221,
+      "tp": 1052
+    }
+  },
+  "cv_summary": {
+    "mean_auc": 0.8812,
+    "std_auc": 0.0406,
+    "mean_f1": 0.7843
+  },
+  "feature_importance": [
+    {
+      "feature": "delivery_gap_kg",
+      "importance": 16.52435040831849
+    },
+    {
+      "feature": "ore_processed_tonnes",
+      "importance": 13.119755667289661
+    },
+    {
+      "feature": "license_encoded",
+      "importance": 12.811580439585006
+    },
+    {
+      "feature": "inflation_rate",
+      "importance": 10.80419625865256
+    },
+    {
+      "feature": "gold_price_usd",
+      "importance": 9.26296951737773
+    },
+    {
+      "feature": "border_distance_km",
+      "importance": 7.75516814561741
+    },
+    {
+      "feature": "delivery_gap_kg_roll3",
+      "importance": 7.142212877675218
+    },
+    {
+      "feature": "delivery_gap_kg_roll3_std",
+      "importance": 6.215831039211334
+    },
+    {
+      "feature": "payment_delay_days",
+      "importance": 5.111924158947876
+    },
+    {
+      "feature": "rainfall_raw",
+      "importance": 4.828110312162578
+    },
+    {
+      "feature": "fgr_access",
+      "importance": 3.2146104096500614
+    },
+    {
+      "feature": "fgr_distance_km",
+      "importance": 3.2092907655120784
+    }
+  ],
+  "n_features": 12,
+  "feature_cols": [
+    "border_distance_km",
+    "delivery_gap_kg",
+    "delivery_gap_kg_roll3",
+    "delivery_gap_kg_roll3_std",
+    "fgr_access",
+    "fgr_distance_km",
+    "gold_price_usd",
+    "inflation_rate",
+    "license_encoded",
+    "ore_processed_tonnes",
+    "payment_delay_days",
+    "rainfall_raw"
+  ],
+  "risk_weights": {
+    "delivery": 0.3,
+    "fx": 0.2,
+    "border": 0.15,
+    "policy": 0.15,
+    "ore_grade": 0.1,
+    "asm": 0.1
+  },
+  "ablation": [
+    {
+      "group": "ALL",
+      "auc": 0.9207,
+      "delta": 0.0
+    },
+    {
+      "group": "delivery",
+      "auc": 0.8179,
+      "delta": 0.1029
+    },
+    {
+      "group": "macro",
+      "auc": 0.9032,
+      "delta": 0.0176
+    },
+    {
+      "group": "operational",
+      "auc": 0.8701,
+      "delta": 0.0506
+    },
+    {
+      "group": "governance",
+      "auc": 0.8894,
+      "delta": 0.0313
+    },
+    {
+      "group": "spatial",
+      "auc": 0.894,
+      "delta": 0.0267
+    }
+  ],
+  "robustness": [
+    {
+      "noise_level": 0.01,
+      "mean_auc": 0.6428,
+      "degradation": 0.0422
+    },
+    {
+      "noise_level": 0.05,
+      "mean_auc": 0.6354,
+      "degradation": 0.0496
+    },
+    {
+      "noise_level": 0.1,
+      "mean_auc": 0.6415,
+      "degradation": 0.0435
+    },
+    {
+      "noise_level": 0.2,
+      "mean_auc": 0.6429,
+      "degradation": 0.0421
+    }
+  ],
+  "overfitting": {
+    "train_roc_auc": 0.9709,
+    "test_roc_auc": 0.9207,
+    "train_test_gap": 0.0502,
+    "risk": "LOW"
+  }
+}
