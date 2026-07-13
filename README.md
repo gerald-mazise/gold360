@@ -511,3 +511,133 @@ GOLD360 is built around four guiding principles:
 - **Decision Support** — Models generate probabilistic intelligence, not definitive conclusions.
 
 ---
+---
+
+# 📈 Results & Empirical Validation
+
+GOLD360 has been evaluated using multiple complementary validation techniques to assess predictive performance, model robustness, explainability, and analytical reliability. Rather than relying on a single metric, the platform combines statistical validation, feature attribution, leakage testing, and forecasting accuracy to provide a comprehensive assessment of model performance.
+
+---
+
+## Executive Model Performance
+
+<p align="center">
+<img src="gold360_v3/outputs/figures/FIG_16_model_performance_summary.png" width="90%">
+</p>
+
+The executive performance dashboard summarizes the overall predictive capability of the GOLD360 framework, including ROC-AUC, Precision, Recall, F1 Score, and overall classification quality.
+
+---
+
+## Receiver Operating Characteristic (ROC)
+
+<p align="center">
+<img src="gold360_v3/outputs/figures/FIG_05_roc_curve.png" width="90%">
+</p>
+
+The ROC curve demonstrates the model's ability to distinguish between higher-risk and lower-risk delivery scenarios across different decision thresholds.
+
+---
+
+## Precision–Recall Performance
+
+<p align="center">
+<img src="gold360_v3/outputs/figures/FIG_06_precision_recall_curve.png" width="90%">
+</p>
+
+Precision–Recall analysis provides a more informative evaluation under class imbalance, which is particularly important when detecting relatively rare but high-impact anomalies.
+
+---
+
+## Confusion Matrix
+
+<p align="center">
+<img src="gold360_v3/outputs/figures/FIG_07_confusion_matrix.png" width="85%">
+</p>
+
+The confusion matrix illustrates classification performance by comparing predicted outcomes against observed outcomes, highlighting both successful classifications and model errors.
+
+---
+
+## Explainable Artificial Intelligence (SHAP)
+
+<p align="center">
+<img src="gold360_v3/outputs/figures/FIG_59_shap_summary_plot.png" width="90%">
+</p>
+
+SHAP analysis explains individual model predictions by quantifying the contribution of each feature to the predicted delivery risk, improving transparency and analyst confidence.
+
+---
+
+## Feature Importance
+
+<p align="center">
+<img src="gold360_v3/outputs/figures/FIG_63_top_feature_contributions.png" width="90%">
+</p>
+
+Feature contribution analysis identifies the operational, economic, policy, and spatial variables that most strongly influence predicted delivery shortfalls.
+
+---
+
+## Delivery Gap Distribution
+
+<p align="center">
+<img src="gold360_v3/outputs/figures/FIG_03_delivery_gap_distribution.png" width="90%">
+</p>
+
+The delivery-gap distribution illustrates the magnitude and variability of discrepancies between expected and observed gold deliveries across the study period.
+
+---
+
+## Risk Category Distribution
+
+<p align="center">
+<img src="gold360_v3/outputs/figures/FIG_10_risk_category_distribution.png" width="90%">
+</p>
+
+Predicted observations are grouped into operational risk tiers, enabling analysts to prioritize monitoring and intervention efforts.
+
+---
+
+## Leakage Validation
+
+<p align="center">
+<img src="gold360_v3/outputs/figures/FIG_18_leakage_validation_checks.png" width="90%">
+</p>
+
+Leakage validation confirms that the predictive models avoid information leakage between training and evaluation stages, strengthening confidence in reported performance.
+
+---
+
+## Forecast Accuracy
+
+<p align="center">
+<img src="gold360_v3/outputs/figures/FIG_79_forecast_accuracy.png" width="90%">
+</p>
+
+Forecast validation compares predicted delivery behaviour against observed outcomes, providing evidence of temporal consistency and generalisation performance.
+
+---
+
+# Research Validation Summary
+
+| Validation Component | Status |
+|----------------------|:------:|
+| ROC Analysis | ✅ |
+| Precision–Recall Analysis | ✅ |
+| Confusion Matrix Evaluation | ✅ |
+| SHAP Explainability | ✅ |
+| Feature Importance Analysis | ✅ |
+| Leakage Validation | ✅ |
+| Forecast Validation | ✅ |
+| Cross Validation | ✅ |
+| Robustness Testing | ✅ |
+| Overfitting Assessment | ✅ |
+
+---
+
+> **Research Note**
+
+GOLD360 is designed as an **AI-powered economic intelligence and decision-support platform**. Its outputs represent probabilistic intelligence signals intended to support analysts, policymakers, and researchers. The platform does not provide legal determinations or definitive evidence of illicit activity, but instead prioritizes transparency, explainability, and reproducible analytical workflows.
+
+---
