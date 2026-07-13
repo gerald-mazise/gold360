@@ -302,3 +302,212 @@ Executive Decision Support
 ```
 
 ---
+
+---
+
+# 🏗️ System Architecture
+
+GOLD360 is designed as a modular intelligence platform rather than a single machine learning model. Each analytical layer performs a distinct role, allowing the platform to remain transparent, reproducible, and extensible.
+
+```text
+                     GOLD360
+
+        AI-Powered Economic Intelligence Platform
+
+ ┌───────────────────────────────────────────────────────┐
+ │                 Executive Dashboard                   │
+ └───────────────────────────────────────────────────────┘
+                          ▲
+                          │
+ ┌───────────────────────────────────────────────────────┐
+ │      Explainable AI • SHAP • Decision Support         │
+ └───────────────────────────────────────────────────────┘
+                          ▲
+                          │
+ ┌───────────────────────────────────────────────────────┐
+ │      CatBoost Risk Classification Engine              │
+ └───────────────────────────────────────────────────────┘
+                          ▲
+                          │
+ ┌───────────────────────────────────────────────────────┐
+ │     Hybrid Anomaly Detection Ensemble                 │
+ │   Isolation Forest • ECOD • Local Outlier Factor      │
+ └───────────────────────────────────────────────────────┘
+                          ▲
+                          │
+ ┌───────────────────────────────────────────────────────┐
+ │ Weak Supervision • Feature Engineering • Data Fusion  │
+ └───────────────────────────────────────────────────────┘
+                          ▲
+                          │
+ ┌───────────────────────────────────────────────────────┐
+ │ Economic • Operational • Policy • Spatial Data        │
+ └───────────────────────────────────────────────────────┘
+```
+
+---
+
+# 🌍 Why GOLD360 is Different
+
+Most mining analytics platforms focus on reporting historical information.
+
+GOLD360 has been designed as an **Economic Intelligence Platform**, integrating multiple analytical disciplines into a single decision-support ecosystem.
+
+| Traditional Analytics | GOLD360 |
+|------------------------|----------|
+| Static reports | Interactive intelligence platform |
+| Historical dashboards | Predictive & scenario-driven analytics |
+| Single data source | Multi-source intelligence fusion |
+| Operational data only | Economic, policy, operational & spatial intelligence |
+| Black-box predictions | Explainable AI using SHAP |
+| Descriptive reporting | Decision-support intelligence |
+| Manual interpretation | Automated anomaly detection |
+| Independent tools | End-to-end analytical workflow |
+
+---
+
+# 💡 Research Contributions
+
+GOLD360 introduces a hybrid analytical framework for improving visibility across partially observable commodity ecosystems.
+
+### Key contributions include:
+
+- Hybrid Economic Intelligence Framework
+- Weakly Supervised Learning for Limited-Label Environments
+- Delivery Shortfall Risk Modelling
+- Policy-Aware Intelligence
+- Explainable Machine Learning using SHAP
+- Multi-Source Data Fusion
+- Geospatial Intelligence Integration
+- Modular AI Architecture for National Resource Governance
+
+---
+
+# ⭐ Platform Components
+
+## 📊 Economic Intelligence
+
+Integrates macroeconomic indicators including:
+
+- Inflation
+- Exchange rates
+- Gold prices
+- Trade statistics
+- Energy indicators
+- Rainfall
+- Production trends
+
+---
+
+## ⛏️ Operational Intelligence
+
+Monitors:
+
+- Mine production
+- Gold deliveries
+- Recovery performance
+- Operational efficiency
+- Delivery residuals
+- Production consistency
+
+---
+
+## 🏛️ Policy Intelligence
+
+Tracks and analyses:
+
+- Regulatory changes
+- Fiscal interventions
+- Policy events
+- Institutional reforms
+- Historical policy impacts
+- Scenario simulations
+
+---
+
+## 🛰️ Geospatial Intelligence
+
+Provides:
+
+- Regional risk mapping
+- Spatial anomaly visualisation
+- Province-level intelligence
+- Corridor analysis
+- Geographic trend exploration
+
+---
+
+## 🤖 Machine Learning
+
+The platform combines supervised and unsupervised learning approaches.
+
+Core models include:
+
+- CatBoost
+- Isolation Forest
+- ECOD
+- Local Outlier Factor (LOF)
+
+Supporting methods include:
+
+- Weak Supervision
+- SHAP Explainability
+- Feature Engineering
+- Residual Modelling
+
+---
+
+# 📁 Repository Structure
+
+```text
+gold360/
+│
+├── README.md                     Repository homepage
+│
+├── gold360_v3/
+│   ├── app/                      Streamlit application
+│   ├── assets/                   Branding & dashboard images
+│   ├── config/                   Configuration files
+│   ├── data/                     Raw & processed datasets
+│   ├── docs/                     Technical documentation
+│   ├── gold360/                  Core platform source code
+│   ├── models/                   Trained ML models
+│   ├── notebooks/                Research notebooks
+│   ├── outputs/                  Generated figures & reports
+│   ├── reports/                  Model evaluation reports
+│   ├── scripts/                  Automation scripts
+│   └── tests/                    Unit & integration tests
+│
+└── research_audits/              Independent validation studies
+```
+
+---
+
+# 📚 Documentation
+
+The repository includes comprehensive technical documentation covering the complete lifecycle of the platform.
+
+| Document | Description |
+|----------|-------------|
+| Architecture | System architecture and design |
+| Data Lineage | Dataset provenance and governance |
+| Feature Registry | Engineered feature catalogue |
+| Model Governance | Model lifecycle and monitoring |
+| Data Pipeline | End-to-end processing workflow |
+| Experiment Tracking | Reproducibility framework |
+| Streamlit Platform | Dashboard specification |
+| Configuration | System configuration |
+| Research Audits | Independent validation studies |
+
+---
+
+> **Design Philosophy**
+
+GOLD360 is built around four guiding principles:
+
+- **Transparency** — Every prediction should be explainable.
+- **Reproducibility** — Every experiment should be traceable.
+- **Modularity** — Every intelligence layer should be independently extensible.
+- **Decision Support** — Models generate probabilistic intelligence, not definitive conclusions.
+
+---
