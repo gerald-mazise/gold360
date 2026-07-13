@@ -1,102 +1,149 @@
-# GOLD360 — Hybrid Economic Intelligence Platform
+<p align="center">
+  <img src="gold360_v3/assets/branding/gold360_hero_banner.png" alt="GOLD360 Hero Banner" width="100%">
+</p>
 
-A weakly supervised anomaly detection and policy intelligence platform for Zimbabwe's gold ecosystem.
+<p align="center">
+  <img src="gold360_v3/assets/branding/gold360_logo.png" alt="GOLD360 Logo" width="170">
+</p>
 
-## Architecture
+<h1 align="center">GOLD360</h1>
 
+<h3 align="center">
+AI-Powered Economic Intelligence Platform for Zimbabwe's Gold Value Chain
+</h3>
+
+<p align="center">
+
+**Transforming Gold Data into National Intelligence**
+
+</p>
+
+<p align="center">
+
+Economic Intelligence • Machine Learning • Explainable AI • Geospatial Intelligence • Policy Analytics
+
+</p>
+
+---
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![CatBoost](https://img.shields.io/badge/CatBoost-Gradient%20Boosting-yellow?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![SHAP](https://img.shields.io/badge/Explainable-AI-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
+
+</p>
+
+---
+
+# Executive Summary
+
+GOLD360 is an AI-powered economic intelligence platform developed to improve transparency, analytical capability, and strategic decision-making across Zimbabwe's gold value chain.
+
+The platform integrates **economic indicators, mining operations, policy intelligence, geospatial information, trade data, and explainable machine learning** into a unified intelligence framework capable of identifying delivery shortfall risk, structural anomalies, and emerging operational patterns.
+
+Rather than producing isolated dashboards or single-model predictions, GOLD360 combines multiple analytical disciplines into a transparent, modular, and extensible decision-support ecosystem.
+
+---
+
+# Why GOLD360?
+
+Zimbabwe's gold sector is supported by multiple independent data sources, institutions, and reporting systems. Although each contributes valuable information, they often operate in isolation, making it difficult to build a complete operational picture.
+
+This fragmentation limits the ability to:
+
+- Integrate operational, economic and policy intelligence
+- Detect unusual delivery patterns
+- Evaluate the potential impact of policy interventions
+- Explain why risk signals emerge
+- Support evidence-based decision-making using a single analytical platform
+
+GOLD360 addresses these challenges by combining multi-source intelligence into one integrated analytical environment.
+
+---
+
+# Core Objectives
+
+The platform has been designed to:
+
+- Transform fragmented datasets into actionable intelligence
+- Identify delivery shortfall risk through hybrid machine learning
+- Detect structural anomalies using ensemble methods
+- Explain model predictions using SHAP
+- Integrate geospatial and policy intelligence
+- Support evidence-based regulatory and strategic decision-making
+- Provide a scalable foundation for future national mineral intelligence systems
+
+---
+
+# Key Capabilities
+
+| Capability | Description |
+|------------|-------------|
+| 📊 Economic Intelligence | Integration of macroeconomic, operational and trade indicators |
+| 🤖 Machine Learning | CatBoost-based delivery shortfall risk modelling |
+| 🔍 Explainable AI | SHAP feature attribution and transparent model interpretation |
+| 🛰 Geospatial Intelligence | Spatial analysis and regional risk visualisation |
+| ⚠️ Hybrid Anomaly Detection | Ensemble anomaly detection using multiple algorithms |
+| 🧩 Weak Supervision | Proxy label generation for partially observable systems |
+| 📈 Forecasting | Trend estimation and temporal analysis |
+| 🏛 Policy Intelligence | Scenario evaluation and policy impact analysis |
+| 🧱 Modular Architecture | Extensible platform supporting future intelligence modules |
+
+---
+
+# GOLD360 Intelligence Workflow
+
+```text
+Economic Data
+        │
+Mining Operations
+        │
+Policy Events
+        │
+Trade Intelligence
+        │
+Geospatial Data
+        │
+        ▼
+Data Pipeline
+        ▼
+Feature Engineering
+        ▼
+Weak Supervision
+        ▼
+Hybrid Anomaly Detection
+        ▼
+Machine Learning
+        ▼
+Explainable AI
+        ▼
+Scenario Analysis
+        ▼
+Geospatial Intelligence
+        ▼
+Executive Decision Support
 ```
-Data Sources → Data Engineering → Feature Engineering → Weak Supervision
-    → Anomaly Detection Ensemble → Fusion Intelligence Layer
-        → Primary Classifier → Explainability Layer → Policy Intelligence Layer
-```
 
-## Key Results (V3)
+---
 
-| Metric | Value |
-|--------|-------|
-| ROC-AUC | 0.9817 |
-| F1 Score | 0.9047 |
-| Precision | 0.9916 |
-| Recall | 0.8319 |
-| Features | 17 active, 5 excluded |
-| Model | CatBoost 1.2.10 (1000 iter, depth 6) |
-| Calibration | Isotonic regression (3-fold CV) |
+# Platform Highlights
 
-## Project Structure
+- Multi-source data fusion
+- Explainable machine learning
+- Hybrid anomaly detection
+- Policy-aware intelligence
+- Geospatial risk analysis
+- Scenario simulation
+- Interactive Streamlit dashboards
+- Modular research architecture
+- Reproducible analytical workflows
 
-```
-gold360_opencode_v1/
-├── gold360_v3/              # V3 platform (latest)
-│   ├── gold360/             # Python package
-│   │   ├── anomaly/         # Isolation Forest, ECOD, LOF
-│   │   ├── features/        # 17 engineered features
-│   │   ├── models/          # CatBoost classifier
-│   │   ├── fusion/          # Ensemble fusion layer
-│   │   ├── explainability/  # SHAP analysis
-│   │   ├── policy/          # Scenario Intelligence Engine
-│   │   ├── weak_supervision/# Pseudo-label generation
-│   │   └── evaluation/      # Full evaluation pipeline
-│   ├── config/              # YAML configuration
-│   ├── reports/             # JSON evaluation reports
-│   ├── data/raw/            # 17 source datasets
-│   └── outputs/figures/     # 26 thesis figures
-├── dashboard_handoff/       # Dashboard documentation package
-│   ├── 17 markdown docs     # Architecture, features, UX
-│   ├── screenshots/         # 10 page screenshots
-│   └── data/                # 5 JSON data extracts
-└── research_audits/         # Ablation studies
-    ├── audit_01/            # ore_grade_efficiency removal
-    ├── audit_02/            # All component removal
-    ├── audit_03/            # Weight sensitivity
-    └── COMPARISON_REPORT.md
-```
+---
 
-## Setup
+# Dashboard Showcase
 
-```bash
-pip install -e . --no-deps
-pip install catboost scikit-learn shap pandas numpy pyyaml mlflow
-```
+The following sections present the core analytical components of the GOLD360 platform.
 
-## Usage
-
-```bash
-# Run full evaluation
-python -m gold360.evaluation.run_full_evaluation
-
-# Launch Streamlit dashboard
-python run_dashboard.py
-# or
-streamlit run app/main.py --server.port 8503
-```
-
-## Feature Groups
-
-| Group | Features | Importance |
-|-------|----------|------------|
-| Delivery | delivery_gap_kg, delivery_efficiency | 26.4% |
-| Ore Grade | ore_grade_efficiency | 14.8% |
-| Economic | fx_spread_pct, gold_price_lag_3m | 12.1% |
-| Geographic | border_risk, fgr_distance_km | 9.7% |
-| Temporal | month, quarter, year | 8.3% |
-| Policy | policy_shock_flag | 5.2% |
-| Operational | recovery_rate, mine_type_asm | 4.9% |
-
-## Leakage Controls
-
-- 5 features excluded for target leakage (delivery_efficiency r=-0.5365)
-- Fixed pseudo-label threshold (0.5) instead of percentile-based
-- Temporal train/test split (2020-2023 train, 2024-2025 test)
-- Probability calibration via isotonic regression
-
-## Academic Positioning
-
-All outputs are probabilistic intelligence signals, not forensic proof. Terms used:
-- "delivery shortfall risk" (not smuggling)
-- "leakage-risk residual" (not illicit volumes)
-- "probabilistic anomaly signal" (not criminal activity)
-- "structural divergence" (not evidence)
-
-## License
-
-Private — all rights reserved.
