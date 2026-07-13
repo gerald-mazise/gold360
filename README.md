@@ -147,3 +147,142 @@ Executive Decision Support
 
 The following sections present the core analytical components of the GOLD360 platform.
 
+---
+
+# 🖥️ Dashboard Showcase
+
+The GOLD360 dashboard is organized as a sequence of intelligence modules that guide users from **raw data ingestion** to **evidence-based decision support**.
+
+Unlike conventional business intelligence dashboards that simply visualize historical information, GOLD360 combines **data engineering, machine learning, anomaly detection, explainable AI, geospatial analytics, and policy simulation** into a unified analytical workflow.
+
+---
+
+## Executive Overview
+
+<p align="center">
+<img src="gold360_v3/assets/dashboard/gold360_dashboard_overview.png" width="100%">
+</p>
+
+The Executive Overview serves as the platform's operational command center, providing high-level visibility into system status, intelligence outputs, model performance, delivery risk, and analytical workflows.
+
+---
+
+# Data Foundation
+
+Reliable intelligence begins with reliable data. This layer transforms fragmented datasets into a unified analytical foundation.
+
+| Data Pipeline | Feature Engineering |
+|:-------------:|:-------------------:|
+| <img src="gold360_v3/assets/dashboard/gold360_dashboard_data_pipeline.png"> | <img src="gold360_v3/assets/dashboard/gold360_dashboard_feature_engineering.png"> |
+
+### Data Pipeline
+
+- Multi-source data ingestion
+- Temporal harmonisation
+- Dataset validation
+- Missing value handling
+- Standardisation
+- Data lineage
+
+### Feature Engineering
+
+- Feature generation
+- Rolling statistics
+- Lag features
+- Economic indicators
+- Policy features
+- Operational metrics
+
+---
+
+# Intelligence Generation
+
+Once data has been prepared, GOLD360 generates probabilistic intelligence using hybrid learning techniques.
+
+| Weak Supervision | Hybrid Anomaly Detection |
+|:----------------:|:------------------------:|
+| <img src="gold360_v3/assets/dashboard/gold360_dashboard_weak_supervision.png"> | <img src="gold360_v3/assets/dashboard/gold360_dashboard_anomaly_detection.png"> |
+
+### Weak Supervision
+
+Generates proxy intelligence labels where verified observations are limited.
+
+### Hybrid Anomaly Detection
+
+Combines multiple complementary anomaly detection algorithms to identify structural deviations and unusual operational behaviour.
+
+---
+
+# Intelligence Fusion
+
+<p align="center">
+<img src="gold360_v3/assets/dashboard/gold360_dashboard_fusion_layer.png" width="95%">
+</p>
+
+The Fusion Layer integrates signals from multiple intelligence modules into a single analytical representation, improving robustness, consistency, and interpretability.
+
+---
+
+# Model Validation & Explainability
+
+| Model Performance | Explainable AI |
+|:-----------------:|:--------------:|
+| <img src="gold360_v3/assets/dashboard/gold360_dashboard_model_performance.png"> | <img src="gold360_v3/assets/dashboard/gold360_dashboard_explainable_ai.png"> |
+
+Model outputs remain fully transparent through SHAP-based explainability, enabling analysts to understand the key drivers behind every prediction.
+
+---
+
+# Decision Intelligence
+
+| Scenario Analysis | Geospatial Intelligence |
+|:-----------------:|:-----------------------:|
+| <img src="gold360_v3/assets/dashboard/gold360_dashboard_scenario_analysis_1.png"> | <img src="gold360_v3/assets/dashboard/gold360_dashboard_geospacial.png"> |
+
+The final intelligence layer enables analysts to:
+
+- Evaluate policy interventions
+- Compare historical and projected outcomes
+- Explore regional risk patterns
+- Monitor operational performance
+- Support evidence-based strategic decision making
+
+---
+
+# End-to-End Analytical Workflow
+
+```text
+Raw Data
+    │
+    ▼
+Data Pipeline
+    │
+    ▼
+Feature Engineering
+    │
+    ▼
+Weak Supervision
+    │
+    ▼
+Hybrid Anomaly Detection
+    │
+    ▼
+Intelligence Fusion
+    │
+    ▼
+CatBoost Risk Modelling
+    │
+    ▼
+Explainable AI (SHAP)
+    │
+    ▼
+Scenario Analysis
+    │
+    ▼
+Geospatial Intelligence
+    │
+    ▼
+Executive Decision Support
+```
+
+---
