@@ -641,3 +641,115 @@ Forecast validation compares predicted delivery behaviour against observed outco
 GOLD360 is designed as an **AI-powered economic intelligence and decision-support platform**. Its outputs represent probabilistic intelligence signals intended to support analysts, policymakers, and researchers. The platform does not provide legal determinations or definitive evidence of illicit activity, but instead prioritizes transparency, explainability, and reproducible analytical workflows.
 
 ---
+
+---
+
+# 🏗️ System Architecture
+
+GOLD360 is built as a modular intelligence platform that transforms fragmented economic, operational, spatial, and policy information into explainable risk intelligence.
+
+Unlike conventional analytical systems that rely on isolated machine learning models, GOLD360 integrates multiple analytical layers into a unified decision-support pipeline.
+
+<p align="center">
+<img src="gold360_v3/assets/branding/gold360_system_architecture.png" width="95%">
+</p>
+
+The platform follows a layered architecture consisting of:
+
+| Layer | Purpose |
+|--------|---------|
+| Data Sources | Multi-source ingestion of mining, economic, spatial and policy datasets |
+| Data Engineering | Cleaning, harmonisation and validation |
+| Feature Engineering | Construction of operational, economic and governance indicators |
+| Weak Supervision | Generation of probabilistic labels using domain knowledge |
+| Hybrid Anomaly Detection | Identification of statistically unusual behaviour |
+| Fusion Intelligence Layer | Integration of multiple analytical signals |
+| CatBoost Risk Model | Supervised delivery shortfall prediction |
+| Explainability | SHAP-based interpretation of model outputs |
+| Scenario Engine | Policy simulation and impact assessment |
+| Executive Dashboard | Interactive decision-support interface |
+
+---
+
+# ⚙️ Core Technologies
+
+| Component | Technology |
+|-----------|------------|
+| Programming Language | Python |
+| Dashboard | Streamlit |
+| Machine Learning | CatBoost |
+| Weak Supervision | Snorkel |
+| Anomaly Detection | Isolation Forest, ECOD, LOF |
+| Explainability | SHAP |
+| Data Processing | Pandas, NumPy |
+| Visualisation | Plotly, Matplotlib |
+| Geospatial Analysis | Folium |
+| Version Control | Git & GitHub |
+
+---
+
+# 📂 Repository Structure
+
+```text
+gold360
+│
+├── gold360_v3
+│   ├── assets/
+│   │   ├── branding/
+│   │   └── dashboard/
+│   │
+│   ├── config/
+│   ├── data/
+│   │   ├── raw/
+│   │   ├── processed/
+│   │   └── synthetic/
+│   │
+│   ├── gold360/
+│   │   ├── models/
+│   │   ├── features/
+│   │   ├── pipeline/
+│   │   ├── explainability/
+│   │   └── dashboard/
+│   │
+│   ├── outputs/
+│   │   ├── figures/
+│   │   ├── reports/
+│   │   └── models/
+│   │
+│   ├── reports/
+│   ├── scripts/
+│   ├── tests/
+│   ├── README.md
+│   └── requirements.txt
+│
+└── research_audits/
+```
+
+---
+
+# 📚 Documentation
+
+The repository contains comprehensive documentation covering the complete development lifecycle of the platform.
+
+| Document | Purpose |
+|----------|---------|
+| ARCHITECTURE.md | Overall system architecture |
+| DATA_LINEAGE.md | Data provenance and governance |
+| FEATURE_REGISTRY.md | Feature definitions and engineering |
+| CONFIGURATION.md | Configuration reference |
+| MODEL_EVALUATION_REPORT.md | Model evaluation methodology |
+| Research Audits | Independent validation studies |
+
+---
+
+# 🔬 Design Principles
+
+GOLD360 is guided by five engineering principles:
+
+- **Transparency** — Every prediction should be explainable.
+- **Reproducibility** — Research should be independently reproducible.
+- **Scalability** — Components should be modular and extensible.
+- **Evidence-Based Intelligence** — Decisions should be supported by measurable evidence.
+- **Human-Centred Decision Support** — AI assists analysts rather than replacing them.
+
+---
