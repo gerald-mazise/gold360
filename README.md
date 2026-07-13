@@ -48,6 +48,22 @@ Rather than producing isolated dashboards or single-model predictions, GOLD360 c
 
 ---
 
+# The GOLD360 Ecosystem
+
+GOLD360 is a sovereign AI intelligence ecosystem designed to secure Zimbabwe's gold value chain from exploration to export.
+
+Rather than treating illegal mining, production leakage, and mineral traceability as isolated problems, GOLD360 combines economic intelligence, geospatial analytics, artificial intelligence, and computer vision into a unified decision-support platform for governments, regulators, and industry.
+
+The ecosystem consists of three complementary products:
+
+| Platform | Purpose | Status |
+|----------|---------|--------|
+| **GOLD360** | Hybrid economic intelligence platform that identifies production anomalies, leakage risks, and policy impacts across Zimbabwe's gold sector. | Production MVP |
+| **GoldHawk** | Satellite-powered monitoring platform that detects unauthorized mining activity and environmental disturbances using remote sensing and computer vision. | Planned |
+| **GoldSight** | AI-powered mobile assistant that estimates gold concentrate quality and yield from smartphone images, bringing field intelligence directly to artisanal miners. | Planned |
+
+Together they create a continuous intelligence loop—from satellites, to mines, to national policy makers—providing actionable insight across the entire gold ecosystem.
+
 # Why GOLD360?
 
 Zimbabwe's gold sector is supported by multiple independent data sources, institutions, and reporting systems. Although each contributes valuable information, they often operate in isolation, making it difficult to build a complete operational picture.
@@ -753,3 +769,48 @@ GOLD360 is guided by five engineering principles:
 - **Human-Centred Decision Support** — AI assists analysts rather than replacing them.
 
 ---
+# Product Roadmap
+
+## Current Generation
+
+✅ GOLD360 Core Intelligence Platform
+
+- Weak Supervision
+- Hybrid Machine Learning
+- Explainable AI
+- Scenario Analysis
+- Geospatial Intelligence
+- Policy Intelligence
+
+---
+
+## Next Generation
+
+🛰 GoldHawk
+
+Satellite Intelligence
+
+- Illegal mining detection
+- Change detection
+- Environmental monitoring
+- Remote sensing
+- Early warning
+
+---
+
+📱 GoldSight
+
+Field Intelligence
+
+- Ore quality estimation
+- Yield prediction
+- WhatsApp integration
+- Mobile computer vision
+- Ground-truth collection
+
+---
+
+## Future Vision
+
+The long-term vision is a sovereign mineral intelligence network capable of supporting gold, lithium, chrome, platinum and other strategic minerals across Africa.
+
