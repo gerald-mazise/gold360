@@ -235,9 +235,25 @@ Model outputs remain fully transparent through SHAP-based explainability, enabli
 
 # Decision Intelligence
 
-| Scenario Analysis | Geospatial Intelligence |
-|:-----------------:|:-----------------------:|
-| <img src="gold360_v3/assets/dashboard/gold360_dashboard_scenario_analysis_1.png"> | <img src="gold360_v3/assets/dashboard/gold360_dashboard_geospacial.png"> |
+## Scenario Analysis
+
+<p align="center">
+<img src="gold360_v3/assets/dashboard/gold360_dashboard_scenario_analysis.png" width="95%">
+</p>
+
+The Scenario Analysis module allows users to evaluate the potential effects of policy changes, operational assumptions, and macroeconomic conditions on delivery shortfall risk and overall system behaviour.
+
+---
+
+## Geospatial Intelligence
+
+<p align="center">
+<img src="gold360_v3/assets/dashboard/gold360_dashboard_geospatial.png" width="95%">
+</p>
+
+The Geospatial Intelligence module visualizes regional risk patterns, mine distribution, operational hotspots, and spatial trends to support evidence-based monitoring and strategic decision-making.
+
+---
 
 The final intelligence layer enables analysts to:
 
