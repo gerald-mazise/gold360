@@ -814,3 +814,10 @@ Field Intelligence
 
 The long-term vision is a sovereign mineral intelligence network capable of supporting gold, lithium, chrome, platinum and other strategic minerals across Africa.
 
+---
+
+© 2026 Gerald Tatenda Mazise
+
+GOLD360™, GoldHawk™, and GoldSight™ are proprietary technologies developed as part of the GOLD360 Sovereign Intelligence Ecosystem.
+
+All Rights Reserved.
